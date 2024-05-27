@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class MenuHandler : MonoBehaviour
 {
     public enum Type {Learner,Driver };
@@ -151,5 +151,10 @@ public class MenuHandler : MonoBehaviour
     public void ClickOnTestBtn()
     {
         RadioButtonToggled(TestsToggles[0]);
+    }
+    public void ClickOnProModeBtn()
+    {
+        SceneManager.LoadSceneAsync("ProModeMenu");
+
     }
 }
