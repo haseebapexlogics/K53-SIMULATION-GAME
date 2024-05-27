@@ -3,7 +3,22 @@ guid: 4c350e8cb00644f4a9f3cdf1a8a06e79
 ModelImporter:
   serializedVersion: 20300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body
+    second: {fileID: 2100000, guid: fe192aea52be53642865997d96962a92, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lights
+    second: {fileID: 2100000, guid: 45cc5cc77ec8a744f9eec551ebdaa21d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tyres
+    second: {fileID: 2100000, guid: e01274330e7c3fe4d9818ba7109e1915, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -34,7 +49,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1.25
+    globalScale: 1.23
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -85,7 +100,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.012499999
+    globalScale: 0.0123
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
