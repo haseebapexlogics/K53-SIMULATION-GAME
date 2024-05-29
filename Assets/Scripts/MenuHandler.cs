@@ -29,6 +29,7 @@ public class MenuHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Screen.orientation = ScreenOrientation.Portrait;
         if (Instance == null)
         {
             Instance = this;
@@ -154,7 +155,12 @@ public class MenuHandler : MonoBehaviour
     }
     public void ClickOnProModeBtn()
     {
-        SceneManager.LoadSceneAsync("ProModeMenu");
+        StartCoroutine(LoadProModeMenu());
 
+    }
+    IEnumerator LoadProModeMenu()
+    {
+        yield return new WaitForSecondsRealtime(2);
+        SceneManager.LoadSceneAsync("ProModeMenu");
     }
 }
