@@ -4,15 +4,43 @@ using UnityEngine;
 
 public class IndicatorCheckUI : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [HideInInspector] public bool checkIndicatorRight;
+    [HideInInspector] public bool checkindicatorLeft;
+    [HideInInspector] public bool checkIndicatorDouble;
+    public bool RightIndictorRuleFollowed;
+    public bool LeftIndictorRuleFollowed;
+    public bool DoubleIndictorRuleFollowed;
+    public bool VehicleReachesEndPoint;
+    public static IndicatorCheckUI Instance;
+    
     void Start()
     {
-        
+        if (Instance == null)
+        {
+            Instance = this;
+        }        
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ClickOnLeftIndecator()
     {
-        
+        if (checkindicatorLeft)
+        {
+            LeftIndictorRuleFollowed = true;
+        }
     }
+    public void ClickOnRightIndecator()
+    {
+        if (checkIndicatorRight)
+        {
+            RightIndictorRuleFollowed = true;
+        }
+    }
+    public void ClickOnDoubleIndecator()
+    {
+        if (checkIndicatorDouble)
+        {
+            DoubleIndictorRuleFollowed = true;
+        }
+    }
+
 }
