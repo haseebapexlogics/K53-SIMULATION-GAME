@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class SeatbeltChecker : MonoBehaviour
 {
@@ -25,17 +27,23 @@ public class SeatbeltChecker : MonoBehaviour
     {
         if (isSeatBelt)
         {
-            //Do Nothing
+            Debug.Log("SeatBelt pehna hua");
+            return;
         }
         else if (!isSeatBelt)
         {
-            //Show Alert
+            AlertHandler.Instance.AlertPopUp.SetActive(true);
+            AlertHandler.Instance.AlertPopUp.GetComponent<Image>().color = Color.red;
+            AlertHandler.Instance.AlertText.text = "SeatBelt error !!!";
         }
     }
 
     public void SetSeatbeltTrue()
     {
         isSeatBelt = true;
+        AlertHandler.Instance.AlertPopUp.SetActive(true);
+        AlertHandler.Instance.AlertPopUp.GetComponent<Image>().color = Color.green;
+        AlertHandler.Instance.AlertText.text = "SeatBelt Done !!!";
     }
 
 }

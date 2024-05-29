@@ -78,4 +78,5 @@ public class GameManager : MonoBehaviour
     {
         GearSlider.value = 0.5f;
     }
+
 }
