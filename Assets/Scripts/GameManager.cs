@@ -27,6 +27,9 @@ public class GameManager : MonoBehaviour
     {
         LevelNumber = PlayerPrefs.GetInt("CurrentLevel");
         CurrentVehicle = PlayerPrefs.GetString("CurrentVehicle");
+
+        CurrentVehicle = "LMV";
+        Debug.Log(CurrentVehicle);
        
     }
 

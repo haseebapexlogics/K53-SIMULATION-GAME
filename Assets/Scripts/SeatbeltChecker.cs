@@ -7,8 +7,7 @@ using UnityEngine.UI;
 public class SeatbeltChecker : MonoBehaviour
 {
     public static SeatbeltChecker Instance;
-    [HideInInspector] public bool isSeatBelt;
-
+    [HideInInspector] public bool isSeatBelt = false;
 
 
     // Start is called before the first frame update
@@ -17,33 +16,29 @@ public class SeatbeltChecker : MonoBehaviour
         Instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (isSeatBelt)
+        if (other.CompareTag("Player"))
         {
-            Debug.Log("SeatBelt pehna hua");
-            return;
+            if (isSeatBelt)
+            {
+                AlertHandler.Instance.OnShowPopUp("SeatBelt Test Complete !!!", Color.green);
+            }
+            else if (!isSeatBelt)
+            {
+                AlertHandler.Instance.OnShowPopUp("SeatBelt error !!!", Color.red);
+            }
         }
-        else if (!isSeatBelt)
-        {
-            AlertHandler.Instance.AlertPopUp.SetActive(true);
-            AlertHandler.Instance.AlertPopUp.GetComponent<Image>().color = Color.red;
-            AlertHandler.Instance.AlertText.text = "SeatBelt error !!!";
-        }
+
     }
+
+
 
     public void SetSeatbeltTrue()
     {
         isSeatBelt = true;
-        AlertHandler.Instance.AlertPopUp.SetActive(true);
-        AlertHandler.Instance.AlertPopUp.GetComponent<Image>().color = Color.green;
-        AlertHandler.Instance.AlertText.text = "SeatBelt Done !!!";
+        AlertHandler.Instance.OnShowPopUp("SeatBelt Done !!!", Color.green);
     }
 
 }
