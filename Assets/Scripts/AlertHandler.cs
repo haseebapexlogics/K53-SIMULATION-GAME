@@ -1,5 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 using UnityEngine.UI;
@@ -19,6 +19,7 @@ public class AlertHandler : MonoBehaviour
     }
     public void OnShowPopUp(string text, Color clr)
     {
+        StopCoroutine(DisablePopUp());
         AlertPopUp.SetActive(true);
         AlertText.text = text;
         AlertText.color = clr;
