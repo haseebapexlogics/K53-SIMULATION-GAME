@@ -14,12 +14,13 @@ public class SeatbeltChecker : MonoBehaviour
     void Start()
     {
         Instance = this;
+        SeatBeltSetting.Instance.SeatBeltBtn.SetActive(true);
     }
 
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.transform.parent.CompareTag("Player"))
         {
             if (isSeatBelt)
             {
@@ -34,11 +35,5 @@ public class SeatbeltChecker : MonoBehaviour
     }
 
 
-
-    public void SetSeatbeltTrue()
-    {
-        isSeatBelt = true;
-        AlertHandler.Instance.OnShowPopUp("SeatBelt Done !!!", Color.green);
-    }
 
 }
