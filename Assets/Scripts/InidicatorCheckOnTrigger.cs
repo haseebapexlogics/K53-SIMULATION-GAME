@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class InidicatorCheckOnTrigger : MonoBehaviour
@@ -22,9 +21,11 @@ public class InidicatorCheckOnTrigger : MonoBehaviour
             if (EntryPoint)
             {
                 GetComponent<BoxCollider>().enabled = false;
+                IndicatorCheckUI.Instance.CheckTriggerEnable = true;
+                IndicatorCheckUI.Instance.VehicleReachesEndPoint = false;
                 if (LeftIndicator)
                 {
-                    IndicatorCheckUI.Instance.checkindicatorLeft = true;
+                    IndicatorCheckUI.Instance.checkIndicatorLeft = true;
                 }
                 if (RightIndicator)
                 {
@@ -39,7 +40,8 @@ public class InidicatorCheckOnTrigger : MonoBehaviour
             if (ExitPoit)
             {
                 GetComponent<BoxCollider>().enabled = false;
-                
+                IndicatorCheckUI.Instance.CheckTriggerEnable = false;
+                IndicatorCheckUI.Instance.CheckRulesOnEndingTrigger();
             }
 
         }
