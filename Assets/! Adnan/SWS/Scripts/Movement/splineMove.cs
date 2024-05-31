@@ -10,7 +10,6 @@ using System.Collections;
 using DG.Tweening;
 using DG.Tweening.Core;
 using DG.Tweening.Plugins.Options;
-using AdnanScripts;
 
 
 namespace SWS
@@ -204,8 +203,6 @@ namespace SWS
         private int[] rndArray;
         //coroutine when a wait routine is active
         private Coroutine waitRoutine;
-        SO_Level soLevel;
-        SO_Levels mySoLevels;
         //check for automatic initialization
 
         void Awake()
