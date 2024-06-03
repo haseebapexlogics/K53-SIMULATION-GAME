@@ -8,7 +8,7 @@ public class HornCheckTrigger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        HornCheckUI.Instance.HornBtn.SetActive(true);
     }
 
     private void OnTriggerEnter(Collider other)

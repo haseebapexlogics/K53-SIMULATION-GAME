@@ -20,10 +20,15 @@ public class GameManager : MonoBehaviour
     int LevelNumber;
     string CurrentVehicle;
     public Camera MainCamera;
+    public static GameManager Instance;
 
     // Start is called before the first frame update
     void Start()
     {
+        if(Instance==null)
+        {
+            Instance = this;
+        }
         LevelNumber = PlayerPrefs.GetInt("CurrentLevel");
         CurrentVehicle = PlayerPrefs.GetString("CurrentVehicle");
 

@@ -5,6 +5,7 @@ public class HornCheckUI : MonoBehaviour
     [HideInInspector] public bool HornRuleCheck;
     [HideInInspector] public bool HornsRuleViolated;
     [HideInInspector] public bool VehicleReachesEndPoint;
+    public GameObject HornBtn;
    
     public static HornCheckUI Instance;
     // Start is called before the first frame update
