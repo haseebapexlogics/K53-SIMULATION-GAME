@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using SWS;
 
 public class TrafficSignalC : MonoBehaviour
 {
@@ -21,6 +22,20 @@ public class TrafficSignalC : MonoBehaviour
 
 
     public bool isZebraCrossingAvailable = false;
+    public bool isPedestriansAvailable = false;
+    public bool isTrafficAvailable = false;
+
+
+    public GameObject[] Pedestrians;
+    public GameObject[] TrafficCars;
+
+
+
+
+
+
+
+
 
     [HideInInspector] public int Signalindex;
 
@@ -56,10 +71,25 @@ public class TrafficSignalC : MonoBehaviour
             WalkGreen.SetActive(true);
             WalkRed.SetActive(false);
         }
+        if (isPedestriansAvailable)
+        {
+            for (int i = 0; i < Pedestrians.Length; i++)
+            {
+                Pedestrians[i].GetComponent<splineMove>().StartMove();
+            }
+        }
+        if (isTrafficAvailable)
+        {
+            for (int i = 0; i < TrafficCars.Length; i++)
+            {
+                TrafficCars[i].GetComponent<splineMove>().Pause();
+            }
+        }
+
         Signalindex = 1;
 
 
-        yield return new WaitForSeconds(7f);
+        yield return new WaitForSeconds(13f);
 
         Red.SetActive(false);
         Yellow.SetActive(true);
@@ -77,6 +107,13 @@ public class TrafficSignalC : MonoBehaviour
         {
             WalkGreen.SetActive(false);
             WalkRed.SetActive(true);
+        }
+        if (isTrafficAvailable)
+        {
+            for (int i = 0; i < TrafficCars.Length; i++)
+            {
+                TrafficCars[i].GetComponent<splineMove>().Resume();
+            }
         }
         Signalindex = 3;
         
@@ -102,6 +139,13 @@ public class TrafficSignalC : MonoBehaviour
         {
             WalkGreen.SetActive(true);
             WalkRed.SetActive(false);
+        }
+        if (isTrafficAvailable)
+        {
+            for (int i = 0; i < TrafficCars.Length; i++)
+            {
+                TrafficCars[i].GetComponent<splineMove>().Pause();
+            }
         }
         Signalindex = 1;
 
