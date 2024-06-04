@@ -78,13 +78,13 @@ public class TrafficSignalC : MonoBehaviour
                 Pedestrians[i].GetComponent<splineMove>().StartMove();
             }
         }
-        if (isTrafficAvailable)
-        {
-            for (int i = 0; i < TrafficCars.Length; i++)
-            {
-                TrafficCars[i].GetComponent<splineMove>().Pause();
-            }
-        }
+        //if (isTrafficAvailable)
+        //{
+        //    for (int i = 0; i < TrafficCars.Length; i++)
+        //    {
+        //        TrafficCars[i].GetComponent<splineMove>().Pause();
+        //    }
+        //}
 
         Signalindex = 1;
 
@@ -108,13 +108,13 @@ public class TrafficSignalC : MonoBehaviour
             WalkGreen.SetActive(false);
             WalkRed.SetActive(true);
         }
-        if (isTrafficAvailable)
-        {
-            for (int i = 0; i < TrafficCars.Length; i++)
-            {
-                TrafficCars[i].GetComponent<splineMove>().Resume();
-            }
-        }
+        //if (isTrafficAvailable)
+        //{
+        //    for (int i = 0; i < TrafficCars.Length; i++)
+        //    {
+        //        TrafficCars[i].GetComponent<splineMove>().Resume();
+        //    }
+        //}
         Signalindex = 3;
         
         StartCoroutine(TrafficSignal1.GetComponent<TrafficSignalC>().StartSignal());
@@ -123,7 +123,7 @@ public class TrafficSignalC : MonoBehaviour
         TrafficSignal1.transform.Find("Zebra Checker").gameObject.SetActive(false);
 
 
-        yield return new WaitForSeconds(7f);
+        yield return new WaitForSeconds(10f);
 
         Red.SetActive(false);
         Yellow.SetActive(true);
@@ -140,13 +140,13 @@ public class TrafficSignalC : MonoBehaviour
             WalkGreen.SetActive(true);
             WalkRed.SetActive(false);
         }
-        if (isTrafficAvailable)
-        {
-            for (int i = 0; i < TrafficCars.Length; i++)
-            {
-                TrafficCars[i].GetComponent<splineMove>().Pause();
-            }
-        }
+        //if (isTrafficAvailable)
+        //{
+        //    for (int i = 0; i < TrafficCars.Length; i++)
+        //    {
+        //        TrafficCars[i].GetComponent<splineMove>().Pause();
+        //    }
+        //}
         Signalindex = 1;
 
         //yield return new WaitForSeconds(36f);

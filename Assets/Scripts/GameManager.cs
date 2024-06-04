@@ -33,7 +33,6 @@ public class GameManager : MonoBehaviour
         CurrentVehicle = PlayerPrefs.GetString("CurrentVehicle");
 
         CurrentVehicle = "LMV";
-        Debug.Log(CurrentVehicle);
        
     }
 
