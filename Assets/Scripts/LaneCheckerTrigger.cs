@@ -23,11 +23,19 @@ public class LaneCheckerTrigger : MonoBehaviour
         if (EntryPoint && EndOfTrigger && NotAllowedArea == false)
         {
             AlertHandler.Instance.OnShowPopUp("Follow Road Line Rule",Color.green);
+            for (int i = 0; i < transform.childCount; i++)
+            {
+                transform.GetChild(i).gameObject.SetActive(false);
+            }
         }
         if (NotAllowedArea)
         {
             AlertHandler.Instance.OnShowPopUp("Not Follow Road Line Rule", Color.red);
-            transform.gameObject.SetActive(false);          
+            transform.gameObject.SetActive(false);
+            for (int i = 0; i < transform.childCount; i++)
+            {
+                transform.GetChild(i).gameObject.SetActive(false);
+            }
         }
        
     }

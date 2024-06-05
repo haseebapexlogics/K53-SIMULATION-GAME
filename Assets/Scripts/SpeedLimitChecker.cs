@@ -33,7 +33,7 @@ public class SpeedLimitChecker : MonoBehaviour
             if (CurrentPlayer.transform.GetComponent<RCC_CarControllerV3>())
             {
                 CurrentVehicleSpeed = CurrentPlayer.transform.GetComponent<RCC_CarControllerV3>().speed;
-                Debug.Log(CurrentVehicleSpeed);
+               // Debug.Log(CurrentVehicleSpeed);
             }
             //Bike ConditionWrite Here
 
