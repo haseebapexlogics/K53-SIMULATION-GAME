@@ -17,6 +17,7 @@ public class ZebraCheckerC : MonoBehaviour
                 AlertHandler.Instance.OnShowPopUp("Zebra Crossing Rule followed.", Color.green);
             }
 
+            this.GetComponent<BoxCollider>().enabled = false;
         }
     }
 }

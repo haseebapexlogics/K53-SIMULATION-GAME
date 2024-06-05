@@ -17,7 +17,7 @@ public class TrafficSignalCheckerChowk : MonoBehaviour
             {
                 AlertHandler.Instance.OnShowPopUp("Signal Rule followed.", Color.green);
             }
-            this.gameObject.SetActive(false);
+            this.GetComponent<BoxCollider>().enabled = false;
         }
     }
 }

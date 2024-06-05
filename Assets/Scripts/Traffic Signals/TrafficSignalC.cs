@@ -57,6 +57,7 @@ public class TrafficSignalC : MonoBehaviour
         if (other.transform.root.CompareTag("Player"))
         {
             StartCoroutine(StartSignal());
+            GetComponent<BoxCollider>().enabled = false;
         }
     }
 
