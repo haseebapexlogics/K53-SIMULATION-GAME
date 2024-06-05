@@ -8,6 +8,10 @@ public class LaneCheckerTrigger : MonoBehaviour
     [HideInInspector] public bool NotAllowedArea;
     [HideInInspector] public bool AllowedArea;
     [HideInInspector] public bool EndOfTrigger;
+    public string FollowString;
+    public string unFollowString;
+    public bool Sign;
+    public bool Rule;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,16 +26,24 @@ public class LaneCheckerTrigger : MonoBehaviour
         }
         if (EntryPoint && EndOfTrigger && NotAllowedArea == false)
         {
-            AlertHandler.Instance.OnShowPopUp("Follow Road Line Rule",Color.green);
+            AlertHandler.Instance.OnShowPopUp(FollowString,Color.green);
             GameManager.Instance.NumberOfSignsFollowed++;
             for (int i = 0; i < transform.childCount; i++)
             {
                 transform.GetChild(i).gameObject.SetActive(false);
             }
+            if (Sign)
+            {
+                GameManager.Instance.NumberOfSignsFollowed++;
+            }
+            if (Rule)
+            {
+                GameManager.Instance.NumberOfRulesFollowed++;
+            }
         }
         if (NotAllowedArea)
         {
-            AlertHandler.Instance.OnShowPopUp("Not Follow Road Line Rule", Color.red);
+            AlertHandler.Instance.OnShowPopUp(unFollowString, Color.red);
             transform.gameObject.SetActive(false);
             for (int i = 0; i < transform.childCount; i++)
             {
