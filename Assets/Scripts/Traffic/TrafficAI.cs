@@ -18,11 +18,11 @@ public class TrafficAI : MonoBehaviour
     {
         if (Physics.Raycast(RayCastInitPoint.position, Vector3.forward, out hit))
         {
-           // Debug.Log("Hit = " + hit.transform.gameObject.name);
+            // Debug.Log("Hit = " + hit.transform.gameObject.name);
 
-           // Debug.DrawRay(RayCastInitPoint.position, transform.forward, Color.blue);
-            
-            
+            // Debug.DrawRay(RayCastInitPoint.position, transform.forward, Color.blue);
+
+
             if (hit.transform.gameObject.CompareTag("TrafficVehicle") && hit.distance <= 5 || !Movement)
             {
                 this.gameObject.GetComponent<splineMove>().Pause();
