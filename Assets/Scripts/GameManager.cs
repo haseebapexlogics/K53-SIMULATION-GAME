@@ -21,7 +21,9 @@ public class GameManager : MonoBehaviour
     string CurrentVehicle;
     public Camera MainCamera;
     public static GameManager Instance;
-
+    public int NumberOfRulesFollowed;
+    public int NumberOfSignsFollowed;
+    public int NumberOfControlsFollowed;
     // Start is called before the first frame update
     void Start()
     {

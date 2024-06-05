@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class LaneCheckerTrigger : MonoBehaviour
 {
-    public bool EntryPoint;
-    public bool NotAllowedArea;
-    public bool AllowedArea;
-    public bool EndOfTrigger;
+    [HideInInspector]public bool EntryPoint;
+    [HideInInspector] public bool NotAllowedArea;
+    [HideInInspector] public bool AllowedArea;
+    [HideInInspector] public bool EndOfTrigger;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +23,7 @@ public class LaneCheckerTrigger : MonoBehaviour
         if (EntryPoint && EndOfTrigger && NotAllowedArea == false)
         {
             AlertHandler.Instance.OnShowPopUp("Follow Road Line Rule",Color.green);
+            GameManager.Instance.NumberOfSignsFollowed++;
             for (int i = 0; i < transform.childCount; i++)
             {
                 transform.GetChild(i).gameObject.SetActive(false);

@@ -22,6 +22,7 @@ public class EngineRuleImplementation : MonoBehaviour
     {
         EngineStartPanel.SetActive(false);
         AlertHandler.Instance.OnShowPopUp("Engine Rule Followed",Color.green);
+        GameManager.Instance.NumberOfControlsFollowed++;
 
 
     }

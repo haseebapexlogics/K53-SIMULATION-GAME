@@ -7,14 +7,22 @@ public class TrafficActivator : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
+
         if (other.transform.root.CompareTag("Player"))
         {
+<<<<<<< Updated upstream
             //Debug.Log("Here");
+=======
+            Debug.Log("Here");
+            for (int i = 0; i < GetComponentInParent<TrafficSignalC>().TrafficCars.Length; i++)
+            {
+                GetComponentInParent<TrafficSignalC>().TrafficCars[i].GetComponent<TrafficAI>().Movement = true;
+                GetComponentInParent<TrafficSignalC>().TrafficCars[i].GetComponent<splineMove>().StartMove();
+            }
+            GetComponent<BoxCollider>().enabled = false;
+>>>>>>> Stashed changes
         }
-        for (int i = 0; i< GetComponentInParent<TrafficSignalC>().TrafficCars.Length; i++)
-        {
-            GetComponentInParent<TrafficSignalC>().TrafficCars[i].GetComponent<TrafficAI>().Movement = true;
-            GetComponentInParent<TrafficSignalC>().TrafficCars[i].GetComponent<splineMove>().StartMove();
-        }
+        
+
     }
 }

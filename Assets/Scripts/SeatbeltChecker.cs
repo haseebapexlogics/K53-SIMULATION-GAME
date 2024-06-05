@@ -22,14 +22,16 @@ public class SeatbeltChecker : MonoBehaviour
     {
         if (other.transform.root.CompareTag("Player"))
         {
-            if (isSeatBelt)
-            {
-                AlertHandler.Instance.OnShowPopUp("SeatBelt Test Complete !!!", Color.green);
-            }
-            else if (!isSeatBelt)
+            //if (isSeatBelt)
+            //{
+            //    AlertHandler.Instance.OnShowPopUp("SeatBelt Test Complete !!!", Color.green);
+            //}
+            if (!isSeatBelt)
             {
                 AlertHandler.Instance.OnShowPopUp("SeatBelt error !!!", Color.red);
+                SeatBeltSetting.Instance.StopChecking = true;
             }
+            GetComponent<BoxCollider>().enabled = false;
         }
 
     }

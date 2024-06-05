@@ -7,7 +7,7 @@ public class SeatBeltSetting : MonoBehaviour
     public static SeatBeltSetting Instance;
 
     public GameObject SeatBeltBtn;
-
+    public bool StopChecking;
 
     private void Start()
     {
@@ -16,7 +16,13 @@ public class SeatBeltSetting : MonoBehaviour
 
     public void SetSeatbeltTrue()
     {
-        SeatbeltChecker.Instance.isSeatBelt = true;
-        //AlertHandler.Instance.OnShowPopUp("SeatBelt Done !!!", Color.green);
+        if (!StopChecking)
+        {
+            SeatbeltChecker.Instance.isSeatBelt = true;
+            AlertHandler.Instance.OnShowPopUp("SeatBelt Done !!!", Color.green);
+            GameManager.Instance.NumberOfControlsFollowed++;
+        }
+      
     }
+    
 }
