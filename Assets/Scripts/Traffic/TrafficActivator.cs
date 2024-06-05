@@ -9,7 +9,7 @@ public class TrafficActivator : MonoBehaviour
     {
         if (other.transform.root.CompareTag("Player"))
         {
-            Debug.Log("Here");
+            //Debug.Log("Here");
         }
         for (int i = 0; i< GetComponentInParent<TrafficSignalC>().TrafficCars.Length; i++)
         {

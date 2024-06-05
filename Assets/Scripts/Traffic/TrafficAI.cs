@@ -16,21 +16,45 @@ public class TrafficAI : MonoBehaviour
 
     void CheckNearbyVehicles()
     {
-        if (Physics.Raycast(RayCastInitPoint.position, Vector3.forward, out hit))
+        if (Physics.Raycast(RayCastInitPoint.position, RayCastInitPoint.transform.forward, out hit, 25f))
         {
-            // Debug.Log("Hit = " + hit.transform.gameObject.name);
 
-            // Debug.DrawRay(RayCastInitPoint.position, transform.forward, Color.blue);
+            Debug.DrawRay(RayCastInitPoint.position, transform.forward, Color.blue);
 
-
-            if (hit.transform.gameObject.CompareTag("TrafficVehicle") && hit.distance <= 5 || !Movement)
+            if (!Movement)
             {
                 this.gameObject.GetComponent<splineMove>().Pause();
             }
-            else if (hit.transform.gameObject.CompareTag("TrafficVehicle") == false && hit.distance > 5 || Movement)
+            else if (Movement)
             {
                 this.gameObject.GetComponent<splineMove>().Resume();
+
             }
+
+
+
+            if (hit.transform.gameObject.CompareTag("TrafficVehicle")  || hit.transform.root.CompareTag("Player"))
+            {
+                Debug.Log("Hit = " + hit.transform.name);
+                Debug.Log("Hit dist = "+ hit.distance);
+                if (hit.distance <= 5)
+                {
+                    this.gameObject.GetComponent<splineMove>().Pause();
+                }
+                else
+                {
+                    this.gameObject.GetComponent<splineMove>().Resume();
+                }
+            }
+            else
+            {
+                this.gameObject.GetComponent<splineMove>().Resume();
+
+            }
+            //else if (hit.transform.gameObject.CompareTag("TrafficVehicle") == false && hit.distance > 5 || Movement || hit.transform.root.CompareTag("Player") == false)
+            //{
+            //    this.gameObject.GetComponent<splineMove>().Resume();
+            //}
         }
 
     }
