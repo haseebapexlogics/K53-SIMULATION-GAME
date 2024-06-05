@@ -10,7 +10,7 @@ public class TurnCheckTrigger : MonoBehaviour
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.parent.CompareTag("Player"))
+        if (other.transform.root.CompareTag("Player"))
         {
             if (EntryPoint)
             {

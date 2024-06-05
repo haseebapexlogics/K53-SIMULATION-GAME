@@ -16,7 +16,7 @@ public class InidicatorCheckOnTrigger : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.transform.parent.tag=="Player")
+        if(other.transform.root.tag=="Player")
         {
             if (EntryPoint)
             {

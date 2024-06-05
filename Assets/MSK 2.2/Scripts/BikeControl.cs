@@ -561,8 +561,8 @@ public class BikeControl : MonoBehaviour
 
         if (crash)
         {
-            myRigidbody.constraints = RigidbodyConstraints.None;
-            myRigidbody.centerOfMass = Vector3.zero;
+            //DanishChnages myRigidbody.constraints = RigidbodyConstraints.None;
+            //DanishChnages myRigidbody.centerOfMass = Vector3.zero;
         }
         else
         {
@@ -592,7 +592,7 @@ public class BikeControl : MonoBehaviour
                 }
                 else
                 {
-                    steer = 0;
+                    //DanishChnages steer = 0;
                 }
 
 

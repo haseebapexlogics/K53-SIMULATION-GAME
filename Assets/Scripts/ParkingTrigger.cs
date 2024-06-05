@@ -14,14 +14,14 @@ public class ParkingTrigger : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.transform.parent.transform.CompareTag("Player"))
+        if (other.transform.root.transform.CompareTag("Player"))
         {
             transform.parent.GetComponent<ParkingCheck>().OnStyingTrigger();
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.transform.parent.transform.CompareTag("Player"))
+        if (other.transform.root.transform.CompareTag("Player"))
         {
             transform.parent.GetComponent<ParkingCheck>().OnExitingTrigger();
         }

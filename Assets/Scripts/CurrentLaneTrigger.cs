@@ -19,7 +19,7 @@ public class CurrentLaneTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.parent.CompareTag("Player"))
+        if (other.transform.root.CompareTag("Player"))
         {
            
             if (EntryPoint)

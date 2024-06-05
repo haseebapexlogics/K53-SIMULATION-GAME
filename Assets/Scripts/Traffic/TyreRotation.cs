@@ -13,9 +13,5 @@ public class TyreRotation : MonoBehaviour
         {
             this.gameObject.transform.Rotate(0, Time.deltaTime * speed, 0, Space.Self);
         }
-
     }
-
-
-
 }

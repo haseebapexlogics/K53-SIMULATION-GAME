@@ -7,7 +7,7 @@ public class TrafficSignalCheckerChowk : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.parent.CompareTag("Player"))
+        if (other.transform.root.CompareTag("Player"))
         {
             if (GetComponentInParent<TrafficSignalC>().Signalindex == 1 || GetComponentInParent<TrafficSignalC>().Signalindex == 2)
             {

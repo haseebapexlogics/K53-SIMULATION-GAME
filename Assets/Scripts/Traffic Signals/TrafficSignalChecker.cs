@@ -6,7 +6,7 @@ public class TrafficSignalChecker : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.parent.CompareTag("Player"))
+        if (other.transform.root.CompareTag("Player"))
         {
             if (GetComponentInParent<TrafficSignal>().Signalindex == 1 || GetComponentInParent<TrafficSignal>().Signalindex == 2)
             {

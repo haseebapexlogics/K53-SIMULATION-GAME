@@ -14,7 +14,7 @@ public class SpeedLimitTigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.parent.CompareTag("Player"))
+        if (other.transform.root.CompareTag("Player"))
         {
             GetComponent<BoxCollider>().enabled = false;
             if (EntryPoint)
