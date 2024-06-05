@@ -23,8 +23,8 @@ public class TrafficAI : MonoBehaviour
 
             if (hit.transform.gameObject.CompareTag("TrafficVehicle") || hit.transform.root.CompareTag("Player"))
             {
-                Debug.Log("Hit = " + hit.transform.name);
-                Debug.Log("Hit dist = " + hit.distance);
+            //    Debug.Log("Hit = " + hit.transform.name);
+            //    Debug.Log("Hit dist = " + hit.distance);
                 if (hit.distance <= 5)
                 {
                     this.gameObject.GetComponent<splineMove>().Pause();
@@ -36,12 +36,18 @@ public class TrafficAI : MonoBehaviour
             }
             else
             {
+                Debug.Log("Here");
+
                 if (!Movement)
                 {
+                    Debug.Log("Here2");
+
                     this.gameObject.GetComponent<splineMove>().Pause();
                 }
                 else if (Movement)
                 {
+                    Debug.Log("Here3");
+
                     this.gameObject.GetComponent<splineMove>().Resume();
 
                 }
