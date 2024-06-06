@@ -7,6 +7,10 @@ public class TurnCheckTrigger : MonoBehaviour
     public bool EntryPoint;
     public bool RightDirection;
     public bool WrongDirection;
+    public string FollowString;
+    public string UnfollowString;
+    public bool Sign;
+    public bool Rule;
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
@@ -19,14 +23,23 @@ public class TurnCheckTrigger : MonoBehaviour
             }
             if (RightDirection)
             {
-                AlertHandler.Instance.OnShowPopUp("You take turn on good direction",Color.green);
+                AlertHandler.Instance.OnShowPopUp(FollowString,Color.green);
                 GetComponent<BoxCollider>().enabled = false;
                 transform.parent.gameObject.SetActive(false);
+                if (Sign)
+                {
+                    GameManager.Instance.NumberOfSignsFollowed++;
+                }
+                if (Rule)
+                {
+                    GameManager.Instance.NumberOfRulesFollowed++;
+                }
+                
 
             }
             if (WrongDirection)
             {
-                AlertHandler.Instance.OnShowPopUp("You take turn on wrong direction", Color.red);
+                AlertHandler.Instance.OnShowPopUp(UnfollowString, Color.red);
                 GetComponent<BoxCollider>().enabled = false;
                 transform.parent.gameObject.SetActive(false);
 

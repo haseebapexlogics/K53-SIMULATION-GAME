@@ -16,6 +16,7 @@ public class TrafficSignalCheckerChowk : MonoBehaviour
             else if (GetComponentInParent<TrafficSignalC>().Signalindex == 3)
             {
                 AlertHandler.Instance.OnShowPopUp("Signal Rule followed.", Color.green);
+                GameManager.Instance.NumberOfSignsFollowed++;
             }
             this.GetComponent<BoxCollider>().enabled = false;
         }

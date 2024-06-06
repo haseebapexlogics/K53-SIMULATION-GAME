@@ -12,6 +12,7 @@ public class ParkingCheck : MonoBehaviour
     bool PlayerInTrigger;
     float fillAmount;
     int GearDirection;
+    public 
    
     // Start is called before the first frame update
     void Start()
@@ -57,5 +58,11 @@ public class ParkingCheck : MonoBehaviour
                 gameObject.SetActive(false);
             }
         }
+    }
+
+    public void OnHittingExitPoint()
+    {
+        gameObject.SetActive(false);
+        GameManager.Instance.NumberOfRulesFollowed++;
     }
 }

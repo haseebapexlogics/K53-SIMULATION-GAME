@@ -19,8 +19,8 @@ public class SeatBeltSetting : MonoBehaviour
         if (!StopChecking)
         {
             SeatbeltChecker.Instance.isSeatBelt = true;
-            AlertHandler.Instance.OnShowPopUp("SeatBelt Done !!!", Color.green);
-            GameManager.Instance.NumberOfControlsFollowed++;
+            AlertHandler.Instance.OnShowPopUp("SeatBelt Done, Road Rule Followed !!!", Color.green);
+            GameManager.Instance.NumberOfRulesFollowed++;
             StopChecking = true;
         }
       

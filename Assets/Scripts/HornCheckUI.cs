@@ -22,7 +22,7 @@ public class HornCheckUI : MonoBehaviour
         {
             HornRuleCheck = false;
             HornsRuleViolated = true;
-            AlertHandler.Instance.OnShowPopUp("Not Follow Horn Rule", Color.red);
+            AlertHandler.Instance.OnShowPopUp("Sign Rule Not Followed”", Color.red);
         }
     }
     public void OnReachingEndPoint()
@@ -30,7 +30,8 @@ public class HornCheckUI : MonoBehaviour
         VehicleReachesEndPoint = true;
         if (!HornsRuleViolated)
         {
-            AlertHandler.Instance.OnShowPopUp("Follow Horn Rule",Color.green);
+            AlertHandler.Instance.OnShowPopUp("Sign Rule Followed", Color.green);
+            GameManager.Instance.NumberOfSignsFollowed++;
         }
     }
 }

@@ -5,7 +5,8 @@ using UnityEngine;
 public class ParkingTrigger : MonoBehaviour
 {
     public bool PlayerTouchingTrigger;
-    
+    public bool MainArea;
+    public bool ExitPont;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,16 +15,29 @@ public class ParkingTrigger : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.transform.root.transform.CompareTag("Player"))
+        if (MainArea)
         {
-            transform.parent.GetComponent<ParkingCheck>().OnStyingTrigger();
+            if (other.transform.root.transform.CompareTag("Player"))
+            {
+                transform.parent.GetComponent<ParkingCheck>().OnStyingTrigger();
+            }
         }
+        if (ExitPont)
+        {
+            GetComponent<BoxCollider>().enabled = false;
+            transform.parent.GetComponent<ParkingCheck>().OnHittingExitPoint();
+        }
+      
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.transform.root.transform.CompareTag("Player"))
+        if (MainArea)
         {
-            transform.parent.GetComponent<ParkingCheck>().OnExitingTrigger();
+            if (other.transform.root.transform.CompareTag("Player"))
+            {
+                transform.parent.GetComponent<ParkingCheck>().OnExitingTrigger();
+            }
         }
+       
     }
 }
