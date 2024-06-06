@@ -6,7 +6,12 @@ ModelImporter:
   - first:
       74: -203655887218126122
     second: mixamo.com
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: body
+    second: {fileID: 2100000, guid: 8f87f98708d6cb44dabed5e2ded9eb8d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -19,14 +24,7 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: "Avatar Rig Configuration mis-match. Bone length in configuration
-      does not match position in animation file:\n\t'mixamorig:LeftUpLeg' : position
-      error = 100851.226563 mm\n\t'mixamorig:LeftLeg' : position error = 436838.062500
-      mm\n\t'mixamorig:LeftFoot' : position error = 390465.812500 mm\n\t'mixamorig:LeftToeBase'
-      : position error = 136415.375000 mm\n\t'mixamorig:RightUpLeg' : position error
-      = 100755.625000 mm\n\t'mixamorig:RightLeg' : position error = 436829.406250
-      mm\n\t'mixamorig:RightFoot' : position error = 390771.531250 mm\n\t'mixamorig:RightToeBase'
-      : position error = 137550.703125 mm\n"
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
