@@ -10,7 +10,7 @@ public class ObjectsDisabler : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.transform.parent.CompareTag("Player"))
+        if(other.transform.root.CompareTag("Player"))
         {
             transform.GetComponent<BoxCollider>().enabled = false;
             if (ObjectsToBeDisable.Length > 0)

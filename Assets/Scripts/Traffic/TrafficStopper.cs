@@ -9,14 +9,18 @@ public class TrafficStopper : MonoBehaviour
     {
         if (other.CompareTag("TrafficVehicle"))
         {
-            if (other.gameObject.GetComponentInParent<TrafficSignalC>().Signalindex == 1 || other.gameObject.GetComponentInParent<TrafficSignalC>().Signalindex == 2)
+            if (other.gameObject.GetComponentInParent<TrafficSignalC>())
             {
-                other.gameObject.GetComponent<TrafficAI>().Movement = false;
+                if (other.gameObject.GetComponentInParent<TrafficSignalC>().Signalindex == 1 || other.gameObject.GetComponentInParent<TrafficSignalC>().Signalindex == 2)
+                {
+                    other.gameObject.GetComponent<TrafficAI>().Movement = false;
+                }
+                else
+                {
+                    other.gameObject.GetComponent<TrafficAI>().Movement = true;
+                }
             }
-            else
-            {
-                other.gameObject.GetComponent<TrafficAI>().Movement = true;
-            }
+            
         }
     }
 }
