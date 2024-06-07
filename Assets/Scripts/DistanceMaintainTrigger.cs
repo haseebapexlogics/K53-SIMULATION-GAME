@@ -6,6 +6,10 @@ public class DistanceMaintainTrigger : MonoBehaviour
 {
     public bool EntryPoint;
     public bool ExitPoint;
+    public bool Rule;
+    public bool Sign;
+    public string FollowString;
+    public string UnFollowString;
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
@@ -27,7 +31,15 @@ public class DistanceMaintainTrigger : MonoBehaviour
                 {
                     Debug.Log("punnn");
                     other.transform.parent.GetComponent<DIstanceMaintainCheck>().enabled = false;
-                    AlertHandler.Instance.OnShowPopUp("You Maintain Proper Distance",Color.green);
+                    AlertHandler.Instance.OnShowPopUp(FollowString,Color.green);
+                    if (Rule)
+                    {
+                        GameManager.Instance.NumberOfRulesFollowed++;
+                    }
+                    if (Sign)
+                    {
+                        GameManager.Instance.NumberOfSignsFollowed++;
+                    }
                 }
 
             }

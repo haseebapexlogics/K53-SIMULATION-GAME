@@ -12,7 +12,9 @@ public class ParkingCheck : MonoBehaviour
     bool PlayerInTrigger;
     float fillAmount;
     int GearDirection;
-    public 
+    public bool Rule;
+    public bool Sign;
+    public bool Control;
    
     // Start is called before the first frame update
     void Start()
@@ -48,7 +50,20 @@ public class ParkingCheck : MonoBehaviour
             if (fillAmount >= 0.9999f && AllowedArea)
             {
                 AlertHandler.Instance.OnShowPopUp("Follow Parking Rule",Color.green);
+                if (Rule)
+                {
+                    GameManager.Instance.NumberOfRulesFollowed++;
+                }
+                if (Sign)
+                {
+                    GameManager.Instance.NumberOfSignsFollowed++;
+                }
+                if (Control)
+                {
+                    GameManager.Instance.NumberOfControlsFollowed++;
+                }
                 //transform.GetComponentInChildren<ParkingTrigger>().gameObject.SetActive(false);
+                GameManager.Instance.OnLevelComplete();
                 gameObject.SetActive(false);
             }
             if (fillAmount >= 0.9999f && NotAllowedArea)
@@ -62,7 +77,29 @@ public class ParkingCheck : MonoBehaviour
 
     public void OnHittingExitPoint()
     {
+      
+        if (NotAllowedArea)
+        {
+            AlertHandler.Instance.OnShowPopUp("Follow Parking Rule", Color.green);
+            if (Rule)
+            {
+                GameManager.Instance.NumberOfRulesFollowed++;
+            }
+            if (Sign)
+            {
+                GameManager.Instance.NumberOfSignsFollowed++;
+            }
+            if (Control)
+            {
+                GameManager.Instance.NumberOfControlsFollowed++;
+            }
+        }
+        if (AllowedArea)
+        {
+            AlertHandler.Instance.OnShowPopUp("Not Follow Parking Rule", Color.red);
+            //transform.GetComponentInChildren<ParkingTrigger>().gameObject.SetActive(false);
+            
+        }
         gameObject.SetActive(false);
-        GameManager.Instance.NumberOfRulesFollowed++;
     }
 }

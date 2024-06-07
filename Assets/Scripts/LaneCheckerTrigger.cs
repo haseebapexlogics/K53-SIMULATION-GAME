@@ -27,7 +27,7 @@ public class LaneCheckerTrigger : MonoBehaviour
         if (EntryPoint && EndOfTrigger && NotAllowedArea == false)
         {
             AlertHandler.Instance.OnShowPopUp(FollowString,Color.green);
-            GameManager.Instance.NumberOfSignsFollowed++;
+           // GameManager.Instance.NumberOfSignsFollowed++;
             for (int i = 0; i < transform.childCount; i++)
             {
                 transform.GetChild(i).gameObject.SetActive(false);

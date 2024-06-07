@@ -8,6 +8,10 @@ public class SpeedLimitChecker : MonoBehaviour
     public float MaxAllowedSpeed;
     GameObject CurrentPlayer;
     float CurrentVehicleSpeed;
+    public bool Sign;
+    public bool Rule;
+    public string FollowString;
+    public string UnFollowString;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,8 +26,16 @@ public class SpeedLimitChecker : MonoBehaviour
     public void OnTriggerEnd()
     {
         StartCheckingSpeed = false;
-        AlertHandler.Instance.OnShowPopUp("You Follow Speed Limit",Color.green);
+        AlertHandler.Instance.OnShowPopUp(FollowString,Color.green);
         transform.gameObject.SetActive(false);
+        if (Sign)
+        {
+            GameManager.Instance.NumberOfSignsFollowed++;
+        }
+        if (Rule)
+        {
+            GameManager.Instance.NumberOfRulesFollowed++;
+        }
     }
     // Update is called once per frame
     void Update()
@@ -33,6 +45,7 @@ public class SpeedLimitChecker : MonoBehaviour
             if (CurrentPlayer.transform.GetComponent<RCC_CarControllerV3>())
             {
                 CurrentVehicleSpeed = CurrentPlayer.transform.GetComponent<RCC_CarControllerV3>().speed;
+                //GameManager.Instance.NumberOfRulesFollowed++;
                // Debug.Log(CurrentVehicleSpeed);
             }
             //Bike ConditionWrite Here
@@ -42,7 +55,7 @@ public class SpeedLimitChecker : MonoBehaviour
             if (CurrentVehicleSpeed > MaxAllowedSpeed)
             {
                 StartCheckingSpeed = false;
-                AlertHandler.Instance.OnShowPopUp("You Not Follow Speed Limit", Color.red);
+                AlertHandler.Instance.OnShowPopUp(UnFollowString, Color.red);
                 transform.gameObject.SetActive(false);
             }
         }

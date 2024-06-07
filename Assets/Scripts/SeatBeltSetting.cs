@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SeatBeltSetting : MonoBehaviour
 {
@@ -19,7 +20,8 @@ public class SeatBeltSetting : MonoBehaviour
         if (!StopChecking)
         {
             SeatbeltChecker.Instance.isSeatBelt = true;
-            AlertHandler.Instance.OnShowPopUp("SeatBelt Done, Road Rule Followed !!!", Color.green);
+            SeatBeltBtn.GetComponent<Button>().interactable = false;
+            AlertHandler.Instance.OnShowPopUp("Road Rule Followed !", Color.green);
             GameManager.Instance.NumberOfRulesFollowed++;
             StopChecking = true;
         }

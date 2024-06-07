@@ -10,6 +10,7 @@ public class LevelCompleteTrigger : MonoBehaviour
         if (other.transform.root.CompareTag("Player"))
         {
             GetComponent<BoxCollider>().enabled = false;
+            GameManager.Instance.OnLevelComplete();
         }
     }
 }

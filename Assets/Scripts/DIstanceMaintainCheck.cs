@@ -34,7 +34,7 @@ public class DIstanceMaintainCheck : MonoBehaviour
                     if (distanceToAICar <= 5)
                     {
                         StopChecking = true;
-                        AlertHandler.Instance.OnShowPopUp("You Don't Maintain Proper Distance",Color.red);
+                        AlertHandler.Instance.OnShowPopUp("Road Rule Not Followed", Color.red);
                         Destroy(GetComponent<DIstanceMaintainCheck>());
                     }
                 }
