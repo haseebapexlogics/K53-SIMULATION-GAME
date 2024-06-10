@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
     int RequiredNumberOfSigns;
     int RequiredNumberOfRules;
     int RequiredNumberOfControls;
+    public AudioSource HornSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -150,6 +151,15 @@ public class GameManager : MonoBehaviour
             RestartBtn.SetActive(true);
         }
     }
+    public void PointerDownOnHornBtn()
+    {
+        HornSound.Play();
+    }
+    public void PointerUpHornBtn()
+    {
+        HornSound.Pause();
+    }
+
 
 }
 [System.Serializable]
@@ -166,6 +176,7 @@ public class HMVLevelsData
     public int Rules;
     public int Controls;
 }
+
 [System.Serializable]
 public class BikeLevelsData
 {

@@ -12,7 +12,7 @@ public class MenuHandlerProMode : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Screen.orientation = ScreenOrientation.LandscapeRight;
+        Screen.orientation = ScreenOrientation.LandscapeLeft;
     }
 
     public void ClickOnVehicleBtn(string str)
