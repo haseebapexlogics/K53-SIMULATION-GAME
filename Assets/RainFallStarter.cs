@@ -17,6 +17,7 @@ public class RainFallStarter : MonoBehaviour
         {
             AlertHandler.Instance.OnShowPopUp("Control Rule Followed", Color.green);
             GameManager.Instance.NumberOfControlsFollowed++;
+            WiperBtn.SetActive(false);
 
             once = true;
         }

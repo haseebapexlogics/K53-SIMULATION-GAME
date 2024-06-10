@@ -24,6 +24,7 @@ public class DriftCheck : MonoBehaviour
         if (!once)
         {
             AlertHandler.Instance.OnShowPopUp("Road Rule Not Followed", Color.red);
+            DriftBtn.SetActive(false);
             once = true;
         }
 
