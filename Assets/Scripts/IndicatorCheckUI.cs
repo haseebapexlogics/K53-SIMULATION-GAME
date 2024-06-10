@@ -54,6 +54,7 @@ public class IndicatorCheckUI : MonoBehaviour
             if (LeftIndictorRuleFollowed)
             {
                 AlertHandler.Instance.OnShowPopUp("Follow Left Indecator Rule", Color.green);
+                GameManager.Instance.NumberOfRulesFollowed++;
             }
             else
             {
@@ -66,6 +67,7 @@ public class IndicatorCheckUI : MonoBehaviour
             if (RightIndictorRuleFollowed)
             {
                 AlertHandler.Instance.OnShowPopUp("Follow Right Indecator Rule", Color.green);
+                GameManager.Instance.NumberOfRulesFollowed++;
             }
             else
             {
@@ -78,6 +80,7 @@ public class IndicatorCheckUI : MonoBehaviour
             if (DoubleIndictorRuleFollowed)
             {
                 AlertHandler.Instance.OnShowPopUp("Follow Double Indecator Rule", Color.green);
+                GameManager.Instance.NumberOfRulesFollowed++;
             }
             else
             {

@@ -5,6 +5,7 @@ using UnityEngine;
 public class TrafficSignalCheckerChowk : MonoBehaviour
 {
 
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.root.CompareTag("Player"))

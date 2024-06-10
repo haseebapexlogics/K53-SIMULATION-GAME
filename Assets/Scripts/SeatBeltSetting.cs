@@ -10,7 +10,7 @@ public class SeatBeltSetting : MonoBehaviour
     public GameObject SeatBeltBtn;
     public bool StopChecking;
 
-    private void Start()
+    private void Awake()
     {
         Instance = this;
     }

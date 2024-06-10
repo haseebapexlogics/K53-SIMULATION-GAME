@@ -28,7 +28,7 @@ public class SeatbeltChecker : MonoBehaviour
             //}
             if (!isSeatBelt)
             {
-                AlertHandler.Instance.OnShowPopUp("SeatBelt error, Not Follow Road Rule", Color.red);
+                AlertHandler.Instance.OnShowPopUp("Not Follow Road Rule", Color.red);
                 SeatBeltSetting.Instance.StopChecking = true;
             }
             GetComponent<BoxCollider>().enabled = false;
