@@ -15,7 +15,18 @@ public class ParkingCheck : MonoBehaviour
     public bool Rule;
     public bool Sign;
     public bool Control;
+
+    public string RuleFollowedString;
+    public string RuleNotFollowedString;
+
+
+
+
+    public bool IsLevelFinishedHere = false;
+
+
    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,7 +60,7 @@ public class ParkingCheck : MonoBehaviour
 
             if (fillAmount >= 0.9999f && AllowedArea)
             {
-                AlertHandler.Instance.OnShowPopUp("Follow Parking Rule",Color.green);
+                AlertHandler.Instance.OnShowPopUp(RuleFollowedString, Color.green);
                 if (Rule)
                 {
                     GameManager.Instance.NumberOfRulesFollowed++;
@@ -63,13 +74,20 @@ public class ParkingCheck : MonoBehaviour
                     GameManager.Instance.NumberOfControlsFollowed++;
                 }
                 //transform.GetComponentInChildren<ParkingTrigger>().gameObject.SetActive(false);
-                GameManager.Instance.OnLevelComplete();
+                if (IsLevelFinishedHere)
+                {
+                    GameManager.Instance.OnLevelComplete();
+                }
                 gameObject.SetActive(false);
             }
             if (fillAmount >= 0.9999f && NotAllowedArea)
             {
-                AlertHandler.Instance.OnShowPopUp("Not Follow Parking Rule", Color.red);
+                AlertHandler.Instance.OnShowPopUp(RuleNotFollowedString, Color.red);
                 //transform.GetComponentInChildren<ParkingTrigger>().gameObject.SetActive(false);
+                if (IsLevelFinishedHere)
+                {
+                    GameManager.Instance.OnLevelComplete();
+                }
                 gameObject.SetActive(false);
             }
         }
@@ -80,7 +98,7 @@ public class ParkingCheck : MonoBehaviour
       
         if (NotAllowedArea)
         {
-            AlertHandler.Instance.OnShowPopUp("Follow Parking Rule", Color.green);
+            AlertHandler.Instance.OnShowPopUp(RuleFollowedString, Color.green);
             if (Rule)
             {
                 GameManager.Instance.NumberOfRulesFollowed++;
@@ -96,9 +114,12 @@ public class ParkingCheck : MonoBehaviour
         }
         if (AllowedArea)
         {
-            AlertHandler.Instance.OnShowPopUp("Not Follow Parking Rule", Color.red);
+            AlertHandler.Instance.OnShowPopUp(RuleNotFollowedString, Color.red);
             //transform.GetComponentInChildren<ParkingTrigger>().gameObject.SetActive(false);
-            
+            if (IsLevelFinishedHere)
+            {
+                GameManager.Instance.OnLevelComplete();
+            }
         }
         gameObject.SetActive(false);
     }

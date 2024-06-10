@@ -10,11 +10,12 @@ public class ZebraCheckerC : MonoBehaviour
         {
             if (GetComponentInParent<TrafficSignalC>().Signalindex == 1 || GetComponentInParent<TrafficSignalC>().Signalindex == 2)
             {
-                AlertHandler.Instance.OnShowPopUp("Zebra Crossing Rule not followed.", Color.red);
+                AlertHandler.Instance.OnShowPopUp("Road Rule not Followed", Color.red);
             }
             else if (GetComponentInParent<TrafficSignalC>().Signalindex == 3)
             {
-                AlertHandler.Instance.OnShowPopUp("Zebra Crossing Rule followed.", Color.green);
+                AlertHandler.Instance.OnShowPopUp("Road Rule Followed", Color.green);
+                GameManager.Instance.NumberOfRulesFollowed++;
             }
 
             this.GetComponent<BoxCollider>().enabled = false;

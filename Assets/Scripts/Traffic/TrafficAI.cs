@@ -28,10 +28,18 @@ public class TrafficAI : MonoBehaviour
                 if (hit.distance <= 5)
                 {
                     this.gameObject.GetComponent<splineMove>().Pause();
+                    for (int i = 0; i < 4; i++)
+                    {
+                        this.gameObject.transform.GetChild(i).gameObject.GetComponent<TyreRotation>().enabled = false;
+                    }
                 }
                 else
                 {
                     this.gameObject.GetComponent<splineMove>().Resume();
+                    for (int i = 0; i < 4; i++)
+                    {
+                        this.gameObject.transform.GetChild(i).gameObject.GetComponent<TyreRotation>().enabled = true;
+                    }
                 }
             }
             else
