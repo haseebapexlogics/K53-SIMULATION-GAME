@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class CarEngineTurnOff : MonoBehaviour
 {
+    public static CarEngineTurnOff Instance;
+
     public Button BreakBtn;
 
     public Button GasBtn;
@@ -19,28 +21,33 @@ public class CarEngineTurnOff : MonoBehaviour
 
     bool HazardDone = false;
 
+    [HideInInspector] public bool Triggered = false;
 
-    private void OnTriggerEnter(Collider other)
+    private void Start()
     {
-        if (other.transform.root.CompareTag("Player"))
-        {
-            BreakBtn.GetComponent<RCC_UIController>().pressing = true;
-            GasBtn.GetComponent<RCC_UIController>().pressing = false;
-            GasBtn.GetComponent<RCC_UIController>().enabled = false;
-            GasBtn.gameObject.SetActive(false);
-            DuplicateGasBtn.gameObject.SetActive(true);
-            CarSmoke.SetActive(true);
-
-
-
-            HazardButton.GetComponent<Animation>().enabled = true;
-            HazardButton.GetComponent<Animation>().Play();
-
-
-            StartCoroutine(Timer());
-
-        }
+        Instance = this;
     }
+
+    public void CarEngineTurnOffFunc()
+    {
+        BreakBtn.GetComponent<RCC_UIController>().pressing = true;
+        GasBtn.GetComponent<RCC_UIController>().pressing = false;
+        GasBtn.GetComponent<RCC_UIController>().enabled = false;
+        GasBtn.gameObject.SetActive(false);
+        DuplicateGasBtn.gameObject.SetActive(true);
+        CarSmoke.SetActive(true);
+
+
+
+        HazardButton.GetComponent<Animation>().enabled = true;
+        HazardButton.GetComponent<Animation>().Play();
+
+
+        StartCoroutine(Timer());
+    }
+
+
+    
 
 
     IEnumerator Timer()
@@ -52,8 +59,12 @@ public class CarEngineTurnOff : MonoBehaviour
             AlertHandler.Instance.OnShowPopUp("Road Rule Not Followed", Color.red);
         }
 
-        HazardButton.GetComponent<Animation>().Stop();
-        HazardButton.GetComponent<Animation>().enabled = false;
+        if (HazardButton.GetComponent<Animation>().enabled)
+        {
+            HazardButton.GetComponent<Animation>().Stop();
+            HazardButton.GetComponent<Animation>().enabled = false;
+        }
+        
 
 
 
@@ -70,12 +81,24 @@ public class CarEngineTurnOff : MonoBehaviour
 
     public void HazardButtonLevel2()
     {
-        if (!HazardDone)
+        if (Triggered)
         {
-            AlertHandler.Instance.OnShowPopUp("Road Rule Followed", Color.green);
-            GameManager.Instance.NumberOfRulesFollowed++;
+            if (!HazardDone)
+            {
+                AlertHandler.Instance.OnShowPopUp("Road Rule Followed", Color.green);
+                GameManager.Instance.NumberOfRulesFollowed++;
 
-            HazardDone = true;
+                HazardButton.GetComponent<Animation>().Stop();
+                HazardButton.GetComponent<Animation>().enabled = false;
+
+                HazardDone = true;
+            }
+            Triggered = false;
+
+        }
+        else
+        {
+            return;
         }
     }
 
