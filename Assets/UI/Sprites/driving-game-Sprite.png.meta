@@ -4,19 +4,19 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -4352247169662331559
-    second: driving-game-Sprite_0
+    second: map
   - first:
       213: -6873113184831218606
-    second: driving-game-Sprite_1
+    second: Fuel icon
   - first:
       213: -4023446209203863330
-    second: driving-game-Sprite_2
+    second: map pin icon
   - first:
       213: 7566804077354430041
-    second: driving-game-Sprite_3
+    second: Fuel bar
   - first:
       213: 8184773298428631362
-    second: driving-game-Sprite_4
+    second: Damage
   - first:
       213: 8840449165168448479
     second: driving-game-Sprite_5
@@ -28,34 +28,34 @@ TextureImporter:
     second: driving-game-Sprite_7
   - first:
       213: 2165272487061513861
-    second: driving-game-Sprite_8
+    second: PauseBtn
   - first:
       213: -4475674491209173035
-    second: driving-game-Sprite_9
+    second: health icon
   - first:
       213: 5366500195091009935
-    second: driving-game-Sprite_10
+    second: SeatBelt
   - first:
       213: 2831539132723868452
-    second: driving-game-Sprite_11
+    second: Fuel Inner
   - first:
       213: -4124869363390685609
-    second: driving-game-Sprite_12
+    second: Green Bra
   - first:
       213: -5471614750018332141
-    second: driving-game-Sprite_13
+    second: BlackBar
   - first:
       213: -4450282631929459939
-    second: driving-game-Sprite_14
+    second: Girl
   - first:
       213: -6502969946278276876
-    second: driving-game-Sprite_15
+    second: Mobile
   - first:
       213: 577941835712292200
-    second: driving-game-Sprite_16
+    second: RejectBtn
   - first:
       213: -4628217475990700170
-    second: driving-game-Sprite_17
+    second: Accept btn
   - first:
       213: -4294527799698043619
     second: driving-game-Sprite_18
@@ -82,31 +82,31 @@ TextureImporter:
     second: driving-game-Sprite_25
   - first:
       213: 4770160866587191886
-    second: driving-game-Sprite_26
+    second: handBreak
   - first:
       213: 2191049920355517375
     second: driving-game-Sprite_27
   - first:
       213: 1984607740307341871
-    second: driving-game-Sprite_28
+    second: Camera ChangeBtn
   - first:
       213: 6187969765789436367
-    second: driving-game-Sprite_29
+    second: PausePanel
   - first:
       213: 7784244531736296754
-    second: driving-game-Sprite_30
+    second: seat icon
   - first:
       213: 8338913234559090812
-    second: driving-game-Sprite_31
+    second: hands on streeing icon
   - first:
       213: -7171372810656828857
-    second: driving-game-Sprite_32
+    second: Left mirror icon
   - first:
       213: 8275118691673420600
-    second: driving-game-Sprite_33
+    second: Point to point icon
   - first:
       213: -9093143257553233186
-    second: driving-game-Sprite_34
+    second: solid meter icon
   - first:
       213: -9039708978787296501
     second: driving-game-Sprite_35
@@ -121,16 +121,16 @@ TextureImporter:
     second: driving-game-Sprite_38
   - first:
       213: 1266308271674858325
-    second: driving-game-Sprite_39
+    second: freineds icon
   - first:
       213: 5055473929387366058
-    second: driving-game-Sprite_40
+    second: Electic Light icon
   - first:
       213: 816944033541266259
-    second: driving-game-Sprite_41
+    second: meter icon
   - first:
       213: 2228875398133205075
-    second: driving-game-Sprite_42
+    second: right mirror icone
   - first:
       213: 4279212027200636804
     second: driving-game-Sprite_43
@@ -151,13 +151,13 @@ TextureImporter:
     second: driving-game-Sprite_48
   - first:
       213: 5050097936011094116
-    second: driving-game-Sprite_49
+    second: engine icon
   - first:
       213: -5943860329175274243
-    second: driving-game-Sprite_50
+    second: settings icon
   - first:
       213: -5131220886964342110
-    second: driving-game-Sprite_51
+    second: Geardanda
   - first:
       213: 7216979918167126401
     second: driving-game-Sprite_52
@@ -175,165 +175,165 @@ TextureImporter:
     second: driving-game-Sprite_56
   - first:
       213: 2448587548707289793
-    second: driving-game-Sprite_57
+    second: D
   - first:
       213: -3334274133564700224
-    second: driving-game-Sprite_58
+    second: Left Mirror Nasamaj
   - first:
       213: -4813224637729240088
-    second: driving-game-Sprite_59
+    second: P
   - first:
       213: 2253946704392988476
     second: driving-game-Sprite_60
   - first:
       213: 196763587194681675
-    second: driving-game-Sprite_61
+    second: HeadLightBtn
   - first:
       213: 7431863993360013613
     second: driving-game-Sprite_62
   - first:
       213: -2225546723132476586
-    second: driving-game-Sprite_63
+    second: MusicIcon
   - first:
       213: 5435565620020098655
-    second: driving-game-Sprite_64
+    second: Left btn
   - first:
       213: -5852757828931455089
-    second: driving-game-Sprite_65
+    second: Right btn
   - first:
       213: 2265716642091001446
-    second: driving-game-Sprite_66
+    second: RedBar
   - first:
       213: -6832093039126632613
-    second: driving-game-Sprite_67
+    second: R
   - first:
       213: 174422448829146971
-    second: driving-game-Sprite_68
+    second: WiperIcon
   - first:
       213: 6861640361184275613
-    second: driving-game-Sprite_69
+    second: clouds icone
   - first:
       213: -5400047681697987379
-    second: driving-game-Sprite_70
+    second: RightMirrorNasamaj
   - first:
       213: 1037810833678591789
-    second: driving-game-Sprite_71
+    second: Knob
   - first:
       213: 3404976668534538481
-    second: driving-game-Sprite_72
+    second: EngineIcon
   - first:
       213: 3633039205871552302
-    second: driving-game-Sprite_73
+    second: Left Icone
   - first:
       213: -9181468524497073675
-    second: driving-game-Sprite_74
+    second: Right Icon
   - first:
       213: -4917762489851470448
-    second: driving-game-Sprite_75
+    second: Brake
   - first:
       213: -4465871638313772503
-    second: driving-game-Sprite_76
+    second: gass
   - first:
       213: 943582572684401234
-    second: driving-game-Sprite_77
+    second: Steering wheel
   - first:
       213: 2604769660718639911
-    second: driving-game-Sprite_78
+    second: Engine Stop Btn
   - first:
       213: 3340453972686250317
-    second: driving-game-Sprite_79
+    second: EngineStartBtn
   - first:
       213: 8786862999269745602
-    second: driving-game-Sprite_80
+    second: MainMenuText Green
   - first:
       213: -5983417964407207311
-    second: driving-game-Sprite_81
+    second: RestartText Green
   - first:
       213: -7039817191116109031
-    second: driving-game-Sprite_82
+    second: GreenOutLine
   - first:
       213: 657537382117213639
-    second: driving-game-Sprite_83
+    second: BackGround
   - first:
       213: -3287821599161142261
-    second: driving-game-Sprite_84
+    second: ResumeBtn
   - first:
       213: -8841230060007256331
-    second: driving-game-Sprite_85
+    second: GreenEmptyBtn
   - first:
       213: -2233931237550920308
-    second: driving-game-Sprite_86
+    second: BackBtn
   - first:
       213: 1478519100011589322
-    second: driving-game-Sprite_87
+    second: ModeSelectionBar
   - first:
       213: 8435110576310671607
-    second: driving-game-Sprite_88
+    second: LEvelSelectionBar
   - first:
       213: -1060330028934977978
-    second: driving-game-Sprite_89
+    second: TranparentBlackPanel
   - first:
       213: 5429415460357888054
-    second: driving-game-Sprite_90
+    second: HMV Unlocked
   - first:
       213: 4713722487439722181
-    second: driving-game-Sprite_91
+    second: HMVLocked
   - first:
       213: -2440476619465501581
-    second: driving-game-Sprite_92
+    second: BikeUnlocked
   - first:
       213: 8267340029922079762
-    second: driving-game-Sprite_93
+    second: BikdeLocked
   - first:
       213: -821648026321228632
-    second: driving-game-Sprite_94
+    second: LMV Unlocked
   - first:
       213: 7270888289723117178
-    second: driving-game-Sprite_95
+    second: LMV Locked
   - first:
       213: 8115451345087798696
-    second: driving-game-Sprite_96
+    second: BikeModeBtn
   - first:
       213: 4099831962372581378
-    second: driving-game-Sprite_97
+    second: LMV Mode Btn
   - first:
       213: 6136335684447476001
-    second: driving-game-Sprite_98
+    second: HMV Mode btn
   - first:
       213: 5786306398865643372
-    second: driving-game-Sprite_99
+    second: LockImage
   - first:
       213: 2100368899716723106
-    second: driving-game-Sprite_100
+    second: LEvelFailedTextBar
   - first:
       213: 669659344471599719
-    second: driving-game-Sprite_101
+    second: LevelCompleteTextBar
   - first:
       213: -1292335112705961095
-    second: driving-game-Sprite_102
+    second: LevelCompletePanel
   - first:
       213: -3390457971544864427
-    second: driving-game-Sprite_103
+    second: MainMenuBtn
   - first:
       213: 1818371699288637551
-    second: driving-game-Sprite_104
+    second: TryAgainBtn
   - first:
       213: 5469913563340509532
     second: driving-game-Sprite_105
   - first:
       213: -328423676787447098
-    second: driving-game-Sprite_106
+    second: NextLevelBtn
   - first:
       213: 8750270899683990012
-    second: driving-game-Sprite_107
+    second: GreenOutLineBtn
   - first:
       213: 1721630564133888539
-    second: driving-game-Sprite_108
+    second: SolidGreenBtn
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -443,7 +443,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: driving-game-Sprite_2
+      name: map pin icon
       rect:
         serializedVersion: 2
         x: 353
@@ -451,7 +451,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -472,7 +472,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -485,7 +485,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_0
+      name: map
       rect:
         serializedVersion: 2
         x: 24
@@ -493,7 +493,7 @@ TextureImporter:
         width: 162
         height: 162
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -506,7 +506,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_1
+      name: Fuel icon
       rect:
         serializedVersion: 2
         x: 249
@@ -514,7 +514,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -527,7 +527,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_3
+      name: Fuel bar
       rect:
         serializedVersion: 2
         x: 585
@@ -535,7 +535,7 @@ TextureImporter:
         width: 369
         height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -548,7 +548,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_4
+      name: Damage
       rect:
         serializedVersion: 2
         x: 1007
@@ -556,7 +556,7 @@ TextureImporter:
         width: 382
         height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -577,7 +577,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -598,7 +598,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -611,7 +611,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_8
+      name: PauseBtn
       rect:
         serializedVersion: 2
         x: 1834
@@ -619,7 +619,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -632,7 +632,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_9
+      name: health icon
       rect:
         serializedVersion: 2
         x: 249
@@ -640,7 +640,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -653,7 +653,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_10
+      name: SeatBelt
       rect:
         serializedVersion: 2
         x: 353
@@ -661,7 +661,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -674,15 +674,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_11
+      name: Fuel Inner
       rect:
         serializedVersion: 2
         x: 679
-        y: 4090
-        width: 14
-        height: 60
+        y: 4087
+        width: 264
+        height: 67
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -690,279 +690,6 @@ TextureImporter:
       bones: []
       spriteID: 423bf9dc6d5ab4720800000000000000
       internalID: 2831539132723868452
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: driving-game-Sprite_12
-      rect:
-        serializedVersion: 2
-        x: 698
-        y: 4090
-        width: 14
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75ed4322b2581c6c0800000000000000
-      internalID: -4124869363390685609
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: driving-game-Sprite_13
-      rect:
-        serializedVersion: 2
-        x: 717
-        y: 4090
-        width: 14
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31a9e5def5be014b0800000000000000
-      internalID: -5471614750018332141
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: driving-game-Sprite_14
-      rect:
-        serializedVersion: 2
-        x: 736
-        y: 4090
-        width: 14
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1b01cd568b6d32c0800000000000000
-      internalID: -4450282631929459939
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: driving-game-Sprite_15
-      rect:
-        serializedVersion: 2
-        x: 755
-        y: 4090
-        width: 14
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4f0da0fb94fc0c5a0800000000000000
-      internalID: -6502969946278276876
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: driving-game-Sprite_16
-      rect:
-        serializedVersion: 2
-        x: 774
-        y: 4090
-        width: 14
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 865e77a9903450800800000000000000
-      internalID: 577941835712292200
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: driving-game-Sprite_17
-      rect:
-        serializedVersion: 2
-        x: 793
-        y: 4090
-        width: 14
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 67fb1581ab445cfb0800000000000000
-      internalID: -4628217475990700170
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: driving-game-Sprite_18
-      rect:
-        serializedVersion: 2
-        x: 812
-        y: 4090
-        width: 14
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1d45f438b5c664c0800000000000000
-      internalID: -4294527799698043619
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: driving-game-Sprite_19
-      rect:
-        serializedVersion: 2
-        x: 831
-        y: 4090
-        width: 14
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b8eabfc32c581a240800000000000000
-      internalID: 4801265747046936203
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: driving-game-Sprite_20
-      rect:
-        serializedVersion: 2
-        x: 850
-        y: 4090
-        width: 14
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0fcdb41ea6f776370800000000000000
-      internalID: 8315755333986016496
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: driving-game-Sprite_21
-      rect:
-        serializedVersion: 2
-        x: 869
-        y: 4090
-        width: 14
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b2ed13329731fe90800000000000000
-      internalID: -6993747645267320142
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: driving-game-Sprite_22
-      rect:
-        serializedVersion: 2
-        x: 888
-        y: 4090
-        width: 14
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2362afa24a0dc4550800000000000000
-      internalID: 6146516994968135218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: driving-game-Sprite_23
-      rect:
-        serializedVersion: 2
-        x: 907
-        y: 4090
-        width: 14
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fcdcf9b0002a29af0800000000000000
-      internalID: -391072096549089841
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: driving-game-Sprite_24
-      rect:
-        serializedVersion: 2
-        x: 926
-        y: 4090
-        width: 14
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 560b20c140ba74720800000000000000
-      internalID: 2830418924963803237
       vertices: []
       indices: 
       edges: []
@@ -976,7 +703,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -989,7 +716,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_26
+      name: handBreak
       rect:
         serializedVersion: 2
         x: 1654
@@ -997,7 +724,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1018,7 +745,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1031,7 +758,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_28
+      name: Camera ChangeBtn
       rect:
         serializedVersion: 2
         x: 1834
@@ -1039,7 +766,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1052,7 +779,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_29
+      name: PausePanel
       rect:
         serializedVersion: 2
         x: 2283
@@ -1060,7 +787,7 @@ TextureImporter:
         width: 1042
         height: 802
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1073,7 +800,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_30
+      name: seat icon
       rect:
         serializedVersion: 2
         x: 39
@@ -1081,7 +808,7 @@ TextureImporter:
         width: 75
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1094,7 +821,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_31
+      name: hands on streeing icon
       rect:
         serializedVersion: 2
         x: 145
@@ -1102,7 +829,7 @@ TextureImporter:
         width: 75
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1115,7 +842,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_32
+      name: Left mirror icon
       rect:
         serializedVersion: 2
         x: 254
@@ -1123,7 +850,7 @@ TextureImporter:
         width: 75
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1136,7 +863,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_33
+      name: Point to point icon
       rect:
         serializedVersion: 2
         x: 353
@@ -1144,7 +871,7 @@ TextureImporter:
         width: 75
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1157,7 +884,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_34
+      name: solid meter icon
       rect:
         serializedVersion: 2
         x: 441
@@ -1165,7 +892,7 @@ TextureImporter:
         width: 76
         height: 76
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1186,7 +913,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1207,7 +934,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1228,7 +955,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1249,7 +976,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1262,7 +989,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_39
+      name: freineds icon
       rect:
         serializedVersion: 2
         x: 39
@@ -1270,7 +997,7 @@ TextureImporter:
         width: 75
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1283,7 +1010,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_40
+      name: Electic Light icon
       rect:
         serializedVersion: 2
         x: 144
@@ -1291,7 +1018,7 @@ TextureImporter:
         width: 75
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1304,15 +1031,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_41
+      name: meter icon
       rect:
         serializedVersion: 2
-        x: 250
+        x: 249
         y: 3936
-        width: 75
+        width: 78
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1325,15 +1052,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_42
+      name: right mirror icone
       rect:
         serializedVersion: 2
         x: 353
-        y: 3936
+        y: 3935
         width: 75
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1354,7 +1081,7 @@ TextureImporter:
         width: 479
         height: 122
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1375,7 +1102,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1396,7 +1123,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1417,7 +1144,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1438,7 +1165,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1459,7 +1186,7 @@ TextureImporter:
         width: 75
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1472,7 +1199,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_49
+      name: engine icon
       rect:
         serializedVersion: 2
         x: 138
@@ -1480,7 +1207,7 @@ TextureImporter:
         width: 75
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1493,7 +1220,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_50
+      name: settings icon
       rect:
         serializedVersion: 2
         x: 250
@@ -1501,7 +1228,7 @@ TextureImporter:
         width: 75
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1514,7 +1241,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_51
+      name: Geardanda
       rect:
         serializedVersion: 2
         x: 1594
@@ -1522,7 +1249,7 @@ TextureImporter:
         width: 74
         height: 222
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1543,7 +1270,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1564,7 +1291,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1585,7 +1312,7 @@ TextureImporter:
         width: 75
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1606,7 +1333,7 @@ TextureImporter:
         width: 75
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1627,7 +1354,7 @@ TextureImporter:
         width: 395
         height: 83
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1640,7 +1367,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_57
+      name: D
       rect:
         serializedVersion: 2
         x: 1454
@@ -1648,7 +1375,7 @@ TextureImporter:
         width: 33
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1661,7 +1388,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_58
+      name: Left Mirror Nasamaj
       rect:
         serializedVersion: 2
         x: 232
@@ -1669,7 +1396,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1682,7 +1409,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_59
+      name: P
       rect:
         serializedVersion: 2
         x: 1454
@@ -1690,7 +1417,7 @@ TextureImporter:
         width: 33
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1711,7 +1438,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1724,7 +1451,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_61
+      name: HeadLightBtn
       rect:
         serializedVersion: 2
         x: 1843
@@ -1732,7 +1459,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1753,7 +1480,7 @@ TextureImporter:
         width: 75
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1766,7 +1493,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_63
+      name: MusicIcon
       rect:
         serializedVersion: 2
         x: 140
@@ -1774,7 +1501,7 @@ TextureImporter:
         width: 75
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1787,7 +1514,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_64
+      name: Left btn
       rect:
         serializedVersion: 2
         x: 418
@@ -1795,7 +1522,7 @@ TextureImporter:
         width: 102
         height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1808,7 +1535,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_65
+      name: Right btn
       rect:
         serializedVersion: 2
         x: 549
@@ -1816,7 +1543,7 @@ TextureImporter:
         width: 102
         height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1829,15 +1556,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_66
+      name: RedBar
       rect:
         serializedVersion: 2
-        x: 799
-        y: 3493
+        x: 412
+        y: 3283
         width: 469
-        height: 181
+        height: 103
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1850,7 +1577,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_67
+      name: R
       rect:
         serializedVersion: 2
         x: 1454
@@ -1858,7 +1585,7 @@ TextureImporter:
         width: 33
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1871,7 +1598,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_68
+      name: WiperIcon
       rect:
         serializedVersion: 2
         x: 39
@@ -1879,7 +1606,7 @@ TextureImporter:
         width: 75
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1892,7 +1619,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_69
+      name: clouds icone
       rect:
         serializedVersion: 2
         x: 140
@@ -1900,7 +1627,7 @@ TextureImporter:
         width: 75
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1913,7 +1640,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_70
+      name: RightMirrorNasamaj
       rect:
         serializedVersion: 2
         x: 232
@@ -1921,7 +1648,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1934,7 +1661,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_71
+      name: Knob
       rect:
         serializedVersion: 2
         x: 1416
@@ -1942,7 +1669,7 @@ TextureImporter:
         width: 122
         height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1955,7 +1682,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_72
+      name: EngineIcon
       rect:
         serializedVersion: 2
         x: 39
@@ -1963,7 +1690,7 @@ TextureImporter:
         width: 75
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1976,7 +1703,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_73
+      name: Left Icone
       rect:
         serializedVersion: 2
         x: 142
@@ -1984,7 +1711,7 @@ TextureImporter:
         width: 75
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1997,7 +1724,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_74
+      name: Right Icon
       rect:
         serializedVersion: 2
         x: 233
@@ -2005,7 +1732,7 @@ TextureImporter:
         width: 75
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2018,7 +1745,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_75
+      name: Brake
       rect:
         serializedVersion: 2
         x: 1349
@@ -2026,7 +1753,7 @@ TextureImporter:
         width: 361
         height: 202
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2039,15 +1766,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_76
+      name: gass
       rect:
         serializedVersion: 2
-        x: 1753
+        x: 1756
         y: 3235
         width: 160
         height: 317
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2060,7 +1787,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_77
+      name: Steering wheel
       rect:
         serializedVersion: 2
         x: 40
@@ -2068,7 +1795,7 @@ TextureImporter:
         width: 254
         height: 255
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2081,7 +1808,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_78
+      name: Engine Stop Btn
       rect:
         serializedVersion: 2
         x: 1036
@@ -2089,7 +1816,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2102,7 +1829,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_79
+      name: EngineStartBtn
       rect:
         serializedVersion: 2
         x: 1178
@@ -2110,7 +1837,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2123,7 +1850,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_80
+      name: MainMenuText Green
       rect:
         serializedVersion: 2
         x: 2544
@@ -2131,7 +1858,7 @@ TextureImporter:
         width: 520
         height: 140
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2144,7 +1871,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_81
+      name: RestartText Green
       rect:
         serializedVersion: 2
         x: 2544
@@ -2152,7 +1879,7 @@ TextureImporter:
         width: 520
         height: 140
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2165,7 +1892,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_82
+      name: GreenOutLine
       rect:
         serializedVersion: 2
         x: 3174
@@ -2173,7 +1900,7 @@ TextureImporter:
         width: 520
         height: 140
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2186,7 +1913,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_83
+      name: BackGround
       rect:
         serializedVersion: 2
         x: 25
@@ -2194,7 +1921,7 @@ TextureImporter:
         width: 1920
         height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2207,7 +1934,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_84
+      name: ResumeBtn
       rect:
         serializedVersion: 2
         x: 2544
@@ -2215,7 +1942,7 @@ TextureImporter:
         width: 520
         height: 140
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2228,7 +1955,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_85
+      name: GreenEmptyBtn
       rect:
         serializedVersion: 2
         x: 3174
@@ -2236,7 +1963,7 @@ TextureImporter:
         width: 520
         height: 140
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2249,7 +1976,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_86
+      name: BackBtn
       rect:
         serializedVersion: 2
         x: 2093
@@ -2257,7 +1984,7 @@ TextureImporter:
         width: 180
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2270,7 +1997,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_87
+      name: ModeSelectionBar
       rect:
         serializedVersion: 2
         x: 2093
@@ -2278,7 +2005,7 @@ TextureImporter:
         width: 700
         height: 92
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2291,7 +2018,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_88
+      name: LEvelSelectionBar
       rect:
         serializedVersion: 2
         x: 2890
@@ -2299,7 +2026,7 @@ TextureImporter:
         width: 700
         height: 92
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2312,7 +2039,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_89
+      name: TranparentBlackPanel
       rect:
         serializedVersion: 2
         x: 2053
@@ -2320,7 +2047,7 @@ TextureImporter:
         width: 1920
         height: 560
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2333,7 +2060,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_90
+      name: HMV Unlocked
       rect:
         serializedVersion: 2
         x: 96
@@ -2341,7 +2068,7 @@ TextureImporter:
         width: 290
         height: 470
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2354,15 +2081,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_91
+      name: HMVLocked
       rect:
         serializedVersion: 2
         x: 484
-        y: 1235
+        y: 1231
         width: 290
         height: 470
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2375,7 +2102,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_92
+      name: BikeUnlocked
       rect:
         serializedVersion: 2
         x: 831
@@ -2383,7 +2110,7 @@ TextureImporter:
         width: 290
         height: 470
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2396,7 +2123,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_93
+      name: BikdeLocked
       rect:
         serializedVersion: 2
         x: 1185
@@ -2404,7 +2131,7 @@ TextureImporter:
         width: 290
         height: 470
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2417,7 +2144,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_94
+      name: LMV Unlocked
       rect:
         serializedVersion: 2
         x: 1545
@@ -2425,7 +2152,7 @@ TextureImporter:
         width: 290
         height: 470
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2438,15 +2165,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_95
+      name: LMV Locked
       rect:
         serializedVersion: 2
-        x: 1920
+        x: 1924
         y: 1235
         width: 290
         height: 470
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2459,7 +2186,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_96
+      name: BikeModeBtn
       rect:
         serializedVersion: 2
         x: 2263
@@ -2467,7 +2194,7 @@ TextureImporter:
         width: 330
         height: 470
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2480,7 +2207,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_97
+      name: LMV Mode Btn
       rect:
         serializedVersion: 2
         x: 2651
@@ -2488,7 +2215,7 @@ TextureImporter:
         width: 330
         height: 470
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2501,7 +2228,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_98
+      name: HMV Mode btn
       rect:
         serializedVersion: 2
         x: 3039
@@ -2509,7 +2236,7 @@ TextureImporter:
         width: 330
         height: 470
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2522,15 +2249,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_99
+      name: LockImage
       rect:
         serializedVersion: 2
-        x: 3381
+        x: 3411
         y: 1366
         width: 182
         height: 182
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2543,7 +2270,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_100
+      name: LEvelFailedTextBar
       rect:
         serializedVersion: 2
         x: 222
@@ -2551,7 +2278,7 @@ TextureImporter:
         width: 700
         height: 92
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2564,7 +2291,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_101
+      name: LevelCompleteTextBar
       rect:
         serializedVersion: 2
         x: 1094
@@ -2572,7 +2299,7 @@ TextureImporter:
         width: 700
         height: 92
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2585,15 +2312,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_102
+      name: LevelCompletePanel
       rect:
         serializedVersion: 2
         x: 101
-        y: 209
+        y: 288
         width: 1920
-        height: 645
+        height: 566
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2606,7 +2333,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_103
+      name: MainMenuBtn
       rect:
         serializedVersion: 2
         x: 465
@@ -2614,7 +2341,7 @@ TextureImporter:
         width: 291
         height: 79
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2627,7 +2354,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_104
+      name: TryAgainBtn
       rect:
         serializedVersion: 2
         x: 776
@@ -2635,7 +2362,7 @@ TextureImporter:
         width: 291
         height: 79
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2656,7 +2383,7 @@ TextureImporter:
         width: 291
         height: 79
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2669,7 +2396,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_106
+      name: NextLevelBtn
       rect:
         serializedVersion: 2
         x: 1507
@@ -2677,7 +2404,7 @@ TextureImporter:
         width: 291
         height: 79
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2690,7 +2417,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_107
+      name: GreenOutLineBtn
       rect:
         serializedVersion: 2
         x: 1892
@@ -2698,7 +2425,7 @@ TextureImporter:
         width: 291
         height: 79
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2711,7 +2438,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_108
+      name: SolidGreenBtn
       rect:
         serializedVersion: 2
         x: 2203
@@ -2719,7 +2446,7 @@ TextureImporter:
         width: 291
         height: 79
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2727,6 +2454,132 @@ TextureImporter:
       bones: []
       spriteID: b12e7a160e574e710800000000000000
       internalID: 1721630564133888539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Bra
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 3151
+        width: 469
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ed4322b2581c6c0800000000000000
+      internalID: -4124869363390685609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackBar
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 3020
+        width: 469
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a9e5def5be014b0800000000000000
+      internalID: -5471614750018332141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Girl
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 3021
+        width: 109
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b01cd568b6d32c0800000000000000
+      internalID: -4450282631929459939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile
+      rect:
+        serializedVersion: 2
+        x: 3738
+        y: 3480
+        width: 394
+        height: 751
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f0da0fb94fc0c5a0800000000000000
+      internalID: -6502969946278276876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RejectBtn
+      rect:
+        serializedVersion: 2
+        x: 3808
+        y: 3366
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865e77a9903450800800000000000000
+      internalID: 577941835712292200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accept btn
+      rect:
+        serializedVersion: 2
+        x: 3985
+        y: 3366
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67fb1581ab445cfb0800000000000000
+      internalID: -4628217475990700170
       vertices: []
       indices: 
       edges: []

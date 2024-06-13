@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public GameObject GamePlayPanel;
@@ -27,7 +28,8 @@ public class GameManager : MonoBehaviour
     public int NumberOfControlsFollowed;
     public GameObject NextBtn;
     public GameObject RestartBtn;
-    public Text OverAllStatusText;
+    public GameObject TestPassImage;
+    public GameObject TestFailImage;
     public Text SignsObtainedText;
     public Text ControlsObtainedText;
     public Text RulesObtainedText;
@@ -38,9 +40,14 @@ public class GameManager : MonoBehaviour
     int RequiredNumberOfRules;
     int RequiredNumberOfControls;
     public AudioSource HornSound;
+    public Text TaskPanelRulesText;
+    public Text TaskPanelSignsText;
+    public Text TaskPanelControlText;
+    public Transform EngineBtn;
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
         if(Instance==null)
         {
             Instance = this;
@@ -48,9 +55,43 @@ public class GameManager : MonoBehaviour
         LevelNumber = PlayerPrefs.GetInt("CurrentLevel");
         CurrentVehicle = PlayerPrefs.GetString("CurrentVehicle");
         //CurrentVehicle = "LMV";
+        ShowTasksPanelIntruction();
 
     }
+    public void ShowTasksPanelIntruction()
+    {
+        switch (CurrentVehicle)
+        {
+            //For Bike Mode
+            case "Bike":
+ 
+                RequiredNumberOfSigns = BikeLevelData[LevelNumber - 1].Signs;
+                RequiredNumberOfControls = BikeLevelData[LevelNumber - 1].Controls;
+                RequiredNumberOfRules = BikeLevelData[LevelNumber - 1].Rules;
+                break;
+            //For LMV Mode
+            case "LMV":          
+                RequiredNumberOfSigns = LMVLevelData[LevelNumber - 1].Signs;
+                RequiredNumberOfControls = LMVLevelData[LevelNumber - 1].Controls;
+                RequiredNumberOfRules = LMVLevelData[LevelNumber - 1].Rules;            
+                break;
+            //For HMV Mode
+            case "HMV":
+               
+                RequiredNumberOfSigns = HMVLevelData[LevelNumber - 1].Signs;
+                RequiredNumberOfControls = HMVLevelData[LevelNumber - 1].Controls;
+                RequiredNumberOfRules = HMVLevelData[LevelNumber - 1].Rules;   
+                break;
+            //On Wrong Entry
+            default:
+                Debug.Log("wrong Selection");
+                break;
+        }
+        TaskPanelRulesText.text = RequiredNumberOfRules.ToString();
+        TaskPanelSignsText.text = RequiredNumberOfSigns.ToString();
+        TaskPanelControlText.text = RequiredNumberOfControls.ToString();
 
+    }
     public void ClickOnLevelStartBtn()
     {
         MainCamera.enabled = false;
@@ -62,9 +103,7 @@ public class GameManager : MonoBehaviour
                 CurrentPlayer = BikePlayer;
                 CurrentPlayer.transform.position = BikeLevels[LevelNumber - 1].transform.GetChild(0).transform.position;
                 CurrentPlayer.transform.rotation = BikeLevels[LevelNumber - 1].transform.GetChild(0).transform.rotation;
-                RequiredNumberOfSigns = BikeLevelData[LevelNumber - 1].Signs;
-                RequiredNumberOfControls = BikeLevelData[LevelNumber - 1].Controls;
-                RequiredNumberOfRules = BikeLevelData[LevelNumber - 1].Rules;
+             
                 break;
             //For LMV Mode
             case "LMV":
@@ -72,9 +111,7 @@ public class GameManager : MonoBehaviour
                 CurrentPlayer = CarPlayer;
                 CurrentPlayer.transform.position = LMVLevels[LevelNumber - 1].transform.GetChild(0).transform.position;
                 CurrentPlayer.transform.rotation = LMVLevels[LevelNumber - 1].transform.GetChild(0).transform.rotation;
-                RequiredNumberOfSigns = LMVLevelData[LevelNumber - 1].Signs;
-                RequiredNumberOfControls = LMVLevelData[LevelNumber - 1].Controls;
-                RequiredNumberOfRules = LMVLevelData[LevelNumber - 1].Rules;
+              
                 SetRCCProperties();
                 break;
             //For HMV Mode
@@ -83,9 +120,7 @@ public class GameManager : MonoBehaviour
                 CurrentPlayer = TruckPlayer;
                 CurrentPlayer.transform.position = HMVLevels[LevelNumber - 1].transform.GetChild(0).transform.position;
                 CurrentPlayer.transform.rotation = HMVLevels[LevelNumber - 1].transform.GetChild(0).transform.rotation;
-                RequiredNumberOfSigns = HMVLevelData[LevelNumber - 1].Signs;
-                RequiredNumberOfControls = HMVLevelData[LevelNumber - 1].Controls;
-                RequiredNumberOfRules = HMVLevelData[LevelNumber - 1].Rules;
+              
                 SetRCCProperties();
                 break;
             //On Wrong Entry
@@ -116,8 +151,7 @@ public class GameManager : MonoBehaviour
                 BikeLevels[LevelNumber - 1].SetActive(false);          
                 break;
             case "LMV":
-                LMVLevels[LevelNumber - 1].SetActive(false);
-                  
+                LMVLevels[LevelNumber - 1].SetActive(false);           
                 break;
         
             case "HMV":
@@ -137,17 +171,20 @@ public class GameManager : MonoBehaviour
         ControlsObtainedText.text = (NumberOfControlsFollowed + "/" + RequiredNumberOfControls).ToString();
         if (NumberOfSignsFollowed >= RequiredNumberOfSigns && NumberOfRulesFollowed >= RequiredNumberOfRules && NumberOfControlsFollowed >= RequiredNumberOfControls)
         {
-            if (PlayerPrefs.GetInt(CurrentVehicle + LevelNumber) < LevelNumber)
+            if (PlayerPrefs.GetInt(CurrentVehicle + "Completed") < LevelNumber)
             {
-                PlayerPrefs.SetInt(CurrentVehicle + LevelNumber, LevelNumber);
+                PlayerPrefs.SetInt(CurrentVehicle + "Completed", LevelNumber);
             }
-
-            OverAllStatusText.text = "Test Passed";
+            TestPassImage.SetActive(true);
+            TestFailImage.SetActive(false);
+            RestartBtn.SetActive(false);
             NextBtn.SetActive(true);
         }
         else
         {
-            OverAllStatusText.text = "Test Failed";
+            TestPassImage.SetActive(false);
+            TestFailImage.SetActive(true);
+            NextBtn.SetActive(false);
             RestartBtn.SetActive(true);
         }
     }
@@ -159,7 +196,46 @@ public class GameManager : MonoBehaviour
     {
         HornSound.Pause();
     }
-
+    public void ClickOnPauseBtn()
+    {
+        Time.timeScale = 0;
+    }
+    public void ClickOnResumeBtn()
+    {
+        Time.timeScale = 1;
+    }
+    public void ClickOnHomeBtn()
+    {
+        SceneManager.LoadScene("ProModeMenu");
+    }
+    public void ClickOnNextBtn()
+    {
+        if (LevelNumber < 5)
+        {
+            LevelNumber++;
+            PlayerPrefs.SetInt("CurrentLevel", LevelNumber);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("CurrentLevel", 1);
+        }
+        SceneManager.LoadScene("GamePlay");
+    }
+    public void ClickOnRestartBtn()
+    {
+        SceneManager.LoadScene("GamePlay");
+    }
+    public void ClickOnEngineStartBtn()
+    {
+        if (EngineBtn.GetChild(0).gameObject.activeInHierarchy)
+        {
+            EngineBtn.GetChild(0).gameObject.SetActive(false);
+        }
+        else
+        {
+            EngineBtn.GetChild(0).gameObject.SetActive(true);
+        }
+    }
 
 }
 [System.Serializable]

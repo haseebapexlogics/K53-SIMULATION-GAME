@@ -9,6 +9,7 @@ public class MenuHandlerProMode : MonoBehaviour
     string CurrentVehicle;
     int CurrentLevel;
     public GameObject LoadingPanel;
+    public Image FillImage;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,11 +34,27 @@ public class MenuHandlerProMode : MonoBehaviour
     }
     public void LoadGamePlayScene()
     {
+        FillImage.fillAmount = 0;
         StartCoroutine(DeleyLoadGamePlayScene());
     }
     IEnumerator DeleyLoadGamePlayScene()
     {
-        yield return new WaitForSecondsRealtime(2);
-        SceneManager.LoadSceneAsync("GamePlay");
+        float totalTime = 3f;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < totalTime)
+        {
+            elapsedTime += Time.deltaTime;
+            FillImage.fillAmount = Mathf.Clamp01(elapsedTime / totalTime);
+            yield return null;
+        }
+
+        yield return new WaitForSecondsRealtime(0.1f); // Optional slight delay to ensure the bar is fully filled.
+
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("GamePlay");
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
     }
 }

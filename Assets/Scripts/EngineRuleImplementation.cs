@@ -5,6 +5,7 @@ using UnityEngine;
 public class EngineRuleImplementation : MonoBehaviour
 {
     public GameObject EngineStartPanel;
+    bool CheckEngineRule;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,14 +16,20 @@ public class EngineRuleImplementation : MonoBehaviour
     }
     public void ApplyEngineRule()
     {
+        CheckEngineRule = true;
         EngineStartPanel.SetActive(true);
     }
 
     public void ClickOnEngineBtn()
     {
-        EngineStartPanel.SetActive(false);
-        AlertHandler.Instance.OnShowPopUp("Engine Rule Followed",Color.green);
-        GameManager.Instance.NumberOfControlsFollowed++;
+        if (CheckEngineRule)
+        {
+            CheckEngineRule = false;
+            EngineStartPanel.SetActive(false);
+            AlertHandler.Instance.OnShowPopUp("Engine Rule Followed", Color.green);
+            GameManager.Instance.NumberOfControlsFollowed++;
+        }
+       
 
 
     }
