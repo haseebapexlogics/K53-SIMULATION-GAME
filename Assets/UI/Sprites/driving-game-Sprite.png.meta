@@ -19,7 +19,7 @@ TextureImporter:
     second: Damage
   - first:
       213: 8840449165168448479
-    second: driving-game-Sprite_5
+    second: seat belt 2
   - first:
       213: -174734697848572143
     second: driving-game-Sprite_6
@@ -593,7 +593,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: driving-game-Sprite_5
+      name: seat belt 2
       rect:
         serializedVersion: 2
         x: 1567
