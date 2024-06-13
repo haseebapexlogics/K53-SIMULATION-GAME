@@ -16,7 +16,7 @@ public class TrafficAI : MonoBehaviour
 
     void CheckNearbyVehicles()
     {
-        if (Physics.Raycast(RayCastInitPoint.position, RayCastInitPoint.transform.forward, out hit, 25f))
+        if (Physics.Raycast(RayCastInitPoint.position, RayCastInitPoint.transform.forward, out hit, 30f))
         {
 
             Debug.DrawRay(RayCastInitPoint.position, transform.forward, Color.blue);
@@ -44,17 +44,13 @@ public class TrafficAI : MonoBehaviour
             }
             else
             {
-                Debug.Log("Here");
-
                 if (!Movement)
                 {
-                    Debug.Log("Here2");
 
                     this.gameObject.GetComponent<splineMove>().Pause();
                 }
                 else if (Movement)
                 {
-                    Debug.Log("Here3");
 
                     this.gameObject.GetComponent<splineMove>().Resume();
 
@@ -81,5 +77,36 @@ public class TrafficAI : MonoBehaviour
     {
         CheckNearbyVehicles();
 
+    }
+
+    
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.transform.root.CompareTag("Player"))
+        {
+            
+            if (AccidentalTraffic.Instance.isAccidentalTrafficOn)
+            {
+                if (AccidentalTraffic.Instance.Rule)
+                {
+                    AlertHandler.Instance.OnShowPopUp("Road Rule Not Followed", Color.red);
+                    AccidentalTraffic.Instance.isAccidentalTrafficOn = false;
+                }
+                else if (AccidentalTraffic.Instance.Sign)
+                {
+                    AlertHandler.Instance.OnShowPopUp("Sign Rule Not Followed", Color.red);
+                    AccidentalTraffic.Instance.isAccidentalTrafficOn = false;
+                }
+            }
+            else
+            {
+                return;
+            }
+        }
+        else
+        {
+            return;
+        }
     }
 }

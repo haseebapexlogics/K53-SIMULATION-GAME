@@ -47,12 +47,14 @@ public class HeadLightUI : MonoBehaviour
     {
         if (HeadLightRuleFollowed)
         {
-            AlertHandler.Instance.OnShowPopUp("Light lamp Rule Follow", Color.green);
+            AlertHandler.Instance.OnShowPopUp("Sign Rule Followed", Color.green);
+            GameManager.Instance.NumberOfSignsFollowed++;
         }
         else
         {
-            AlertHandler.Instance.OnShowPopUp("Light lamp Rule Not Follow", Color.red);
+            AlertHandler.Instance.OnShowPopUp("Sign Rule Not Followed", Color.red);
         }
+        DoLight(2);
     }
     public void ClickOnHeadLight()
     {
