@@ -22,12 +22,13 @@ public class DistanceMaintainTrigger : MonoBehaviour
                 {
                     
                     other.transform.parent.GetComponent<DIstanceMaintainCheck>().enabled = true;
+                    other.transform.parent.GetComponent<DIstanceMaintainCheck>().StopChecking = false;
                 }
             }
             if (ExitPoint)
             {
                 transform.GetComponent<BoxCollider>().enabled = false;
-                if (other.transform.parent.GetComponent<DIstanceMaintainCheck>())
+                if (other.transform.parent.GetComponent<DIstanceMaintainCheck>().isActiveAndEnabled)
                 {
                     Debug.Log("punnn");
                     other.transform.parent.GetComponent<DIstanceMaintainCheck>().enabled = false;
