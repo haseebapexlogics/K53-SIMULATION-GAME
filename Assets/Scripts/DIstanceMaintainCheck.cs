@@ -6,7 +6,7 @@ public class DIstanceMaintainCheck : MonoBehaviour
 {
     public float maxDistance = 10f; // Maximum distance to cast the ray
     public LayerMask aiCarLayer; // Layer mask for the AI car objects
-    bool StopChecking;
+    public bool StopChecking;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +35,8 @@ public class DIstanceMaintainCheck : MonoBehaviour
                     {
                         StopChecking = true;
                         AlertHandler.Instance.OnShowPopUp("Road Rule Not Followed", Color.red);
-                        Destroy(GetComponent<DIstanceMaintainCheck>());
+                        GetComponent<DIstanceMaintainCheck>().enabled = false;
+                        //Destroy(GetComponent<DIstanceMaintainCheck>());
                     }
                 }
             }
