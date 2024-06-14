@@ -16,15 +16,18 @@ public class TrafficAI : MonoBehaviour
 
     void CheckNearbyVehicles()
     {
-        if (Physics.Raycast(RayCastInitPoint.position, RayCastInitPoint.transform.forward, out hit, 30f))
+        Debug.Log("Done");
+
+        if (Physics.Raycast(RayCastInitPoint.position, RayCastInitPoint.transform.forward, out hit, 3000f))
         {
 
-            Debug.DrawRay(RayCastInitPoint.position, transform.forward, Color.blue);
-
+            Debug.DrawRay(RayCastInitPoint.position, RayCastInitPoint.forward, Color.blue);
+            Debug.Log("Hit = " + hit.transform.name);
+            Debug.Log("Hit dist = " + hit.distance);
             if (hit.transform.gameObject.CompareTag("TrafficVehicle") || hit.transform.root.CompareTag("Player"))
             {
-            //    Debug.Log("Hit = " + hit.transform.name);
-            //    Debug.Log("Hit dist = " + hit.distance);
+               //Debug.Log("Hit = " + hit.transform.name);
+               //Debug.Log("Hit dist = " + hit.distance);
                 if (hit.distance <= 5)
                 {
                     this.gameObject.GetComponent<splineMove>().Pause();
@@ -48,11 +51,19 @@ public class TrafficAI : MonoBehaviour
                 {
 
                     this.gameObject.GetComponent<splineMove>().Pause();
+                    for (int i = 0; i < 4; i++)
+                    {
+                        this.gameObject.transform.GetChild(i).gameObject.GetComponent<TyreRotation>().enabled = false;
+                    }
                 }
                 else if (Movement)
                 {
 
                     this.gameObject.GetComponent<splineMove>().Resume();
+                    for (int i = 0; i < 4; i++)
+                    {
+                        this.gameObject.transform.GetChild(i).gameObject.GetComponent<TyreRotation>().enabled = true;
+                    }
 
                 }
                 //this.gameObject.GetComponent<splineMove>().Resume();

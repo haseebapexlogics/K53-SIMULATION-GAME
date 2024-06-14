@@ -3,7 +3,27 @@ guid: 06035b5eac944504687edc1a47fc9f49
 ModelImporter:
   serializedVersion: 20300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black_parts
+    second: {fileID: 2100000, guid: 823ca3f0bd19c6546bedf133d5f17028, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body
+    second: {fileID: 2100000, guid: a9cf595cb6da58642874b9b4a5be5e6c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lights
+    second: {fileID: 2100000, guid: 73b902706faedcc45b0526a6cf4eecb9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mirrors
+    second: {fileID: 2100000, guid: a708154b6efee86428a4ecb5ccc7eea5, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
