@@ -7,6 +7,10 @@ public class TyreRotation : MonoBehaviour
 {
     public float speed = 0f;
     [HideInInspector] public bool Stop;
+
+    public bool BikeTires = false;
+    
+    
     private void Update()
     {
         if(!Stop)
@@ -14,7 +18,15 @@ public class TyreRotation : MonoBehaviour
 
             if (this.gameObject.GetComponentInParent<TrafficAI>().Movement)//(this.gameObject.GetComponentInParent<splineMove>().IsMoving())
             {
-                this.gameObject.transform.Rotate(0, Time.deltaTime * speed, 0, Space.Self);
+                if (!BikeTires)
+                {
+                    this.gameObject.transform.Rotate(0, Time.deltaTime * speed, 0, Space.Self);
+                }
+                else if (BikeTires)
+                {
+                    this.gameObject.transform.Rotate(Time.deltaTime * speed, 0, 0, Space.Self);
+
+                }
             }
             else if (!this.gameObject.GetComponentInParent<TrafficAI>().Movement)
             {

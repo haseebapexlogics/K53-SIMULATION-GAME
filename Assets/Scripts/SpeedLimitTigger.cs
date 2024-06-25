@@ -20,7 +20,7 @@ public class SpeedLimitTigger : MonoBehaviour
             if (EntryPoint)
             {
                 //Can be use for Hint Purpose
-                transform.parent.GetComponent<SpeedLimitChecker>().OnTriggerStart(other.transform.parent.gameObject);
+                transform.parent.GetComponent<SpeedLimitChecker>().OnTriggerStart(other.transform.root.gameObject);
             }
             if (ExitPoit)
             {

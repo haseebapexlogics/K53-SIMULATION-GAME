@@ -42,11 +42,16 @@ public class SpeedLimitChecker : MonoBehaviour
     {
         if (StartCheckingSpeed && CurrentPlayer)
         {
+            
             if (CurrentPlayer.transform.GetComponent<RCC_CarControllerV3>())
             {
                 CurrentVehicleSpeed = CurrentPlayer.transform.GetComponent<RCC_CarControllerV3>().speed;
                 //GameManager.Instance.NumberOfRulesFollowed++;
                // Debug.Log(CurrentVehicleSpeed);
+            }
+            else if (CurrentPlayer.transform.GetComponent<BikeControl>())
+            {
+                CurrentVehicleSpeed = CurrentPlayer.transform.GetComponent<BikeControl>().speed;
             }
             //Bike ConditionWrite Here
 
