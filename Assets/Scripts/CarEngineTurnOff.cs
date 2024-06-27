@@ -15,6 +15,7 @@ public class CarEngineTurnOff : MonoBehaviour
     public Button DuplicateGasBtn;
 
     public GameObject CarSmoke;
+    public GameObject TruckSmoke;
 
 
     public GameObject HazardButton;
@@ -36,6 +37,7 @@ public class CarEngineTurnOff : MonoBehaviour
         GasBtn.gameObject.SetActive(false);
         DuplicateGasBtn.gameObject.SetActive(true);
         CarSmoke.SetActive(true);
+        TruckSmoke.SetActive(true);
 
 
 
@@ -54,6 +56,7 @@ public class CarEngineTurnOff : MonoBehaviour
     {
         yield return new WaitForSeconds(8f);
         CarSmoke.SetActive(false);
+        TruckSmoke.SetActive(false);
         if (!HazardDone)
         {
             AlertHandler.Instance.OnShowPopUp("Road Rule Not Followed", Color.red);
