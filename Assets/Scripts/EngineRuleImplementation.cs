@@ -9,7 +9,7 @@ public class EngineRuleImplementation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.GetInt("CurrentLevel") == 1 && PlayerPrefs.GetString("CurrentVehicle") == "LMV")
+        if ((PlayerPrefs.GetInt("CurrentLevel") == 1&& PlayerPrefs.GetString("CurrentVehicle") == "LMV") || (PlayerPrefs.GetInt("CurrentLevel") == 3 && PlayerPrefs.GetString("CurrentVehicle") == "HMV"))
         {
             ApplyEngineRule();
         }

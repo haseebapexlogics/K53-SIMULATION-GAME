@@ -7,6 +7,7 @@ public class DIstanceMaintainCheck : MonoBehaviour
     public float maxDistance = 10f; // Maximum distance to cast the ray
     public LayerMask aiCarLayer; // Layer mask for the AI car objects
     public bool StopChecking;
+    public Transform RaycastPoint;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,7 @@ public class DIstanceMaintainCheck : MonoBehaviour
         if (!StopChecking)
         {
             RaycastHit hit;
-            if (Physics.Raycast(transform.position, transform.forward, out hit, maxDistance, aiCarLayer))
+            if (Physics.Raycast(RaycastPoint.position, RaycastPoint.forward, out hit, maxDistance, aiCarLayer))
             {
                 // Check if the ray hit an AI car
                 if (hit.collider.transform.GetComponent<TrafficAI>())

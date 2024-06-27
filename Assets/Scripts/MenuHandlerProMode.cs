@@ -31,6 +31,16 @@ public class MenuHandlerProMode : MonoBehaviour
                 LMVLevels[i].transform.GetChild(0).gameObject.SetActive(false);
                 LMVLevels[i].transform.GetComponent<Button>().interactable = true;
             }
+            if (PlayerPrefs.GetInt("HMVCompleted") >= i)
+            {
+                HMVLevels[i].transform.GetChild(0).gameObject.SetActive(false);
+                HMVLevels[i].transform.GetComponent<Button>().interactable = true;
+            }
+            if (PlayerPrefs.GetInt("BikeCompleted") >= i)
+            {
+                BikeLevels[i].transform.GetChild(0).gameObject.SetActive(false);
+                BikeLevels[i].transform.GetComponent<Button>().interactable = true;
+            }
 
         }
     }

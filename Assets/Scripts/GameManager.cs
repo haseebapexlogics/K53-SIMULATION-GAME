@@ -60,6 +60,7 @@ public class GameManager : MonoBehaviour
     }
     public void ShowTasksPanelIntruction()
     {
+        TasksPanel.SetActive(true);
         switch (CurrentVehicle)
         {
             //For Bike Mode
