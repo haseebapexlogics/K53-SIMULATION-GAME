@@ -13,25 +13,25 @@ public class DistanceMaintainTrigger : MonoBehaviour
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.parent.CompareTag("Player"))
+        if (other.transform.root.CompareTag("Player"))
         {
             if (EntryPoint)
             {
                 transform.GetComponent<BoxCollider>().enabled = false;
-                if (other.transform.parent.GetComponent<DIstanceMaintainCheck>())
+                if (other.transform.root.GetComponent<DIstanceMaintainCheck>())
                 {
                     
-                    other.transform.parent.GetComponent<DIstanceMaintainCheck>().enabled = true;
-                    other.transform.parent.GetComponent<DIstanceMaintainCheck>().StopChecking = false;
+                    other.transform.root.GetComponent<DIstanceMaintainCheck>().enabled = true;
+                    other.transform.root.GetComponent<DIstanceMaintainCheck>().StopChecking = false;
                 }
             }
             if (ExitPoint)
             {
                 transform.GetComponent<BoxCollider>().enabled = false;
-                if (other.transform.parent.GetComponent<DIstanceMaintainCheck>().isActiveAndEnabled)
+                if (other.transform.root.GetComponent<DIstanceMaintainCheck>().isActiveAndEnabled)
                 {
                     Debug.Log("punnn");
-                    other.transform.parent.GetComponent<DIstanceMaintainCheck>().enabled = false;
+                    other.transform.root.GetComponent<DIstanceMaintainCheck>().enabled = false;
                     AlertHandler.Instance.OnShowPopUp(FollowString,Color.green);
                     if (Rule)
                     {

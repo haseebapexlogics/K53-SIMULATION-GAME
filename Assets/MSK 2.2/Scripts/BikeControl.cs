@@ -794,7 +794,7 @@ public class BikeControl : MonoBehaviour
 
 
 
-            if (shift && (currentGear > 1 && speed > 50.0f) && shifmotor)
+            if (shift && (currentGear > 1 && speed > 25.0f) && shifmotor)
             {
                 shifting = true;
                 if (powerShift == 0) { shifmotor = false; }

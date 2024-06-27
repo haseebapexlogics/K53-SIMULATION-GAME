@@ -10,6 +10,7 @@ public class SpeedLimitChecker : MonoBehaviour
     float CurrentVehicleSpeed;
     public bool Sign;
     public bool Rule;
+    public bool Control;
     public string FollowString;
     public string UnFollowString;
     // Start is called before the first frame update
@@ -32,10 +33,15 @@ public class SpeedLimitChecker : MonoBehaviour
         {
             GameManager.Instance.NumberOfSignsFollowed++;
         }
-        if (Rule)
+        else if (Rule)
         {
             GameManager.Instance.NumberOfRulesFollowed++;
         }
+        else if (Control)
+        {
+            GameManager.Instance.NumberOfControlsFollowed++;
+        }
+
     }
     // Update is called once per frame
     void Update()
