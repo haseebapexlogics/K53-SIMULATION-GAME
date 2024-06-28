@@ -19,6 +19,9 @@ public class GameManager : MonoBehaviour
     public GameObject CarPlayer;
     public GameObject TruckPlayer;
     public GameObject CurrentPlayer;
+    public GameObject BikeCAmera;
+    public GameObject BikeCanvas;
+    public GameObject BikeSkidMarks;
     int LevelNumber;
     string CurrentVehicle;
     public Camera MainCamera;
@@ -104,7 +107,7 @@ public class GameManager : MonoBehaviour
                 CurrentPlayer = BikePlayer;
                 CurrentPlayer.transform.position = BikeLevels[LevelNumber - 1].transform.GetChild(0).transform.position;
                 CurrentPlayer.transform.rotation = BikeLevels[LevelNumber - 1].transform.GetChild(0).transform.rotation;
-             
+                SetBikeProperties();
                 break;
             //For LMV Mode
             case "LMV":
@@ -138,7 +141,14 @@ public class GameManager : MonoBehaviour
         RCCCamera.GetComponent<RCC_Camera>().playerCar = CurrentPlayer.GetComponent<RCC_CarControllerV3>();
         Invoke("ChangeGear", 1);
 
-    }   
+    }
+    public void SetBikeProperties()
+    {
+        BikeCAmera.SetActive(true);
+        BikeCanvas.SetActive(true);
+        BikeSkidMarks.SetActive(true);
+        CurrentPlayer.SetActive(true);
+    }
     public void ChangeGear()
     {
         GearSlider.value = 0.5f;

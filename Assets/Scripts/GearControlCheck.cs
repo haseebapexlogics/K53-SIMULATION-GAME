@@ -11,7 +11,7 @@ public class GearControlCheck : MonoBehaviour
     bool once;
     private void Start()
     {
-        if (PlayerPrefs.GetInt("CurrentLevel") == 5 && PlayerPrefs.GetString("CurrentVehicle") == "LMV")
+        if ((PlayerPrefs.GetInt("CurrentLevel") == 5 && PlayerPrefs.GetString("CurrentVehicle") == "LMV")|| (PlayerPrefs.GetInt("CurrentLevel") == 2 && PlayerPrefs.GetString("CurrentVehicle") == "HMV"))
         {
             CheckGearControl = true;
         }
