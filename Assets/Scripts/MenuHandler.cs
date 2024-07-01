@@ -26,6 +26,8 @@ public class MenuHandler : MonoBehaviour
     public Slider RulerSlider;
     public Text ControlText;
     public Slider ControlSlider;
+    public GameObject ProModeBtn;
+    public GameObject ProModeLockedBtn;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +42,21 @@ public class MenuHandler : MonoBehaviour
             toggle.onValueChanged.AddListener(delegate { RadioButtonToggled(toggle); });
         }
         RadioButtonToggled(TestsToggles[0]);
+        CheckProMode();
+    }
+
+    public void CheckProMode()
+    {
+        if (InAppsDataContainer.Instance.ProModeUnlocked)
+        {
+            ProModeBtn.SetActive(true);
+            ProModeLockedBtn.SetActive(false);
+        }
+        else
+        {
+            ProModeBtn.SetActive(false);
+            ProModeLockedBtn.SetActive(true);
+        }
     }
     private void RadioButtonToggled(Toggle selectedRadioButton)
     {
@@ -155,6 +172,9 @@ public class MenuHandler : MonoBehaviour
     }
     public void ClickOnProModeBtn()
     {
+        
+
+
         StartCoroutine(LoadProModeMenu());
 
     }
@@ -162,5 +182,15 @@ public class MenuHandler : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(2);
         SceneManager.LoadSceneAsync("ProModeMenu");
+    }
+
+
+    public void ShowBanner()
+    {
+        AdsManager.Instance.ShowBanner();
+    }
+    public void ShowInterstitial()
+    {
+        AdsManager.Instance.ShowInterstitial();
     }
 }
