@@ -18,6 +18,9 @@ public class MenuHandlerProMode : MonoBehaviour
     {
         Time.timeScale = 1;
         Screen.orientation = ScreenOrientation.LandscapeLeft;
+        PlayerPrefs.SetInt("LMVCompleted", 4);
+        PlayerPrefs.SetInt("HMVCompleted", 4);
+        PlayerPrefs.SetInt("BikeCompleted", 4);
         LevelLockedUnlockedFun();
     }
 

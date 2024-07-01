@@ -8,6 +8,7 @@ public class AccidentalChecker : MonoBehaviour
     {
         if (other.transform.root.CompareTag("Player"))
         {
+            transform.GetComponent<BoxCollider>().enabled = false;
             if (AccidentalTraffic.Instance.isAccidentalTrafficOn)
             {
                 AlertHandler.Instance.OnShowPopUp("Road Rule Followed", Color.green);

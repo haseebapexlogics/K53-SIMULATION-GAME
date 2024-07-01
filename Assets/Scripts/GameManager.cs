@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
+    public GameObject City;
     public GameObject GamePlayPanel;
     public GameObject ResultsPanel;
     public GameObject PausePanel;
@@ -47,6 +48,10 @@ public class GameManager : MonoBehaviour
     public Text TaskPanelSignsText;
     public Text TaskPanelControlText;
     public Transform EngineBtn;
+    private void Awake()
+    {
+        City.SetActive(true);
+    }
     // Start is called before the first frame update
     void Start()
     {

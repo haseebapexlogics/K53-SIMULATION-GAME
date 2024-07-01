@@ -9,6 +9,7 @@ public class HornCheckTrigger : MonoBehaviour
     void Start()
     {
         HornCheckUI.Instance.HornBtn.SetActive(true);
+        HornCheckUI.Instance.BikeHornBtn.SetActive(true);
     }
 
     private void OnTriggerEnter(Collider other)

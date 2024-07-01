@@ -11,12 +11,15 @@ public class SkyBoxSetting : MonoBehaviour
     public Material Skybox3;
 
     public int DesiredSkyBox;
-    
 
-
+    public Color SkyColor;
+    public Light DirectionalLight;
     // Start is called before the first frame update
     void Start()
     {
+
+        DirectionalLight.color = SkyColor;
+
         if (DesiredSkyBox == 1)
         {
             RenderSettings.skybox = Skybox1;

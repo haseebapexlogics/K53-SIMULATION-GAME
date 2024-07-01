@@ -17,6 +17,7 @@ public class SequentialTraffic : MonoBehaviour
     {
         if (other.transform.root.CompareTag("Player"))
         {
+            GetComponent<BoxCollider>().enabled = false;
             AccidentalTraffic.Instance.isAccidentalTrafficOn = true;
             AccidentalTraffic.Instance.Sign = Sign;
             AccidentalTraffic.Instance.Rule = Rule;

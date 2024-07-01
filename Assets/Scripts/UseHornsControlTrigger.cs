@@ -10,6 +10,7 @@ public class UseHornsControlTrigger : MonoBehaviour
     private void Start()
     {
         UseHornsControl.Instance.HornBtn.SetActive(true);
+        UseHornsControl.Instance.BikeHornBtn.SetActive(true);
     }
     private void OnTriggerEnter(Collider other)
     {

@@ -9,6 +9,7 @@ public class UseHornsControl : MonoBehaviour
     [HideInInspector] public bool HornsRuleFollowed;
     [HideInInspector] public bool VehicleReachesEndPoint;
     public GameObject HornBtn;
+    public GameObject BikeHornBtn;
 
     public static UseHornsControl Instance;
     // Start is called before the first frame update
